@@ -11,7 +11,7 @@ execute if entity @s[tag=pk_stage_starting] if score @s pk.enhanced_adventure.de
 # - Ongoing
 execute if entity @s[tag=pk_stage_ongoing] run function pk_enhanced_adventure_strc:common_structures/mechanics/fight_engine/stages/ongoing 
 # - Stopping (check delay if it has BeforeStop events)
-execute if entity @s[tag=pk_stage_stopping] if score @s pk.enhanced_adventure.delay matches 0 run function pk_enhanced_adventure_strc:common_structures/mechanics/fight_engine/stages/start
+execute if entity @s[tag=pk_stage_stopping] if score @s pk.enhanced_adventure.delay matches 0 run function pk_enhanced_adventure_strc:common_structures/mechanics/fight_engine/stages/stop
 
 # Delay score
 scoreboard players remove @s[scores={pk.enhanced_adventure.delay=1..}] pk.enhanced_adventure.delay 1
