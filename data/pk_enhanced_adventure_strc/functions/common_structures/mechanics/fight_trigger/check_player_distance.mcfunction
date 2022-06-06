@@ -1,0 +1,6 @@
+# Trigger the relative fight engine depending on the  distance to check
+execute if score @s pk.enhanced_adventure.trigger.distance matches 1 if entity @p[gamemode=!spectator,distance=..1] run function pk_enhanced_adventure_strc:common_structures/mechanics/fight_trigger/trigger_relative_fight_engine
+execute if score @s pk.enhanced_adventure.trigger.distance matches 2 if entity @p[gamemode=!spectator,distance=..2] run function pk_enhanced_adventure_strc:common_structures/mechanics/fight_trigger/trigger_relative_fight_engine
+execute if score @s pk.enhanced_adventure.trigger.distance matches 3 if entity @p[gamemode=!spectator,distance=..3] run function pk_enhanced_adventure_strc:common_structures/mechanics/fight_trigger/trigger_relative_fight_engine
+execute if score @s pk.enhanced_adventure.trigger.distance matches 4 if entity @p[gamemode=!spectator,distance=..4] run function pk_enhanced_adventure_strc:common_structures/mechanics/fight_trigger/trigger_relative_fight_engine
+execute if score @s pk.enhanced_adventure.trigger.distance matches 5 if entity @p[gamemode=!spectator,distance=..5] run function pk_enhanced_adventure_strc:common_structures/mechanics/fight_trigger/trigger_relative_fight_engine

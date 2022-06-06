@@ -1,0 +1,122 @@
+{
+    "pools": [
+        {
+            "rolls": 2,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:bone",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 2,
+                                "max": 4
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:gold_nugget",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 4,
+                                "max": 6
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:emerald",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 4
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "rolls": {
+                "min": 2,
+                "max": 4
+            },
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "weight": 15,
+                    "name": "minecraft:name_tag",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{pkAncientTablet:1b,pkAncientTabletFaithfulness:1b,Enchantments:[{}],display:{Name:'{\"text\":\"Faithful Ancient Tablet\",\"italic\":false}'},Lore:['{\"text\":\"Faithfulness\",\"color\":\"yellow\",\"italic\":false}'],CustomModelData:1611000}"
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 10,
+                    "name": "minecraft:name_tag",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{pkAncientTablet:1b,pkAncientTabletImpetuousity:1b,Enchantments:[{}],display:{Name:'{\"text\":\"Impetuous Ancient Tablet\",\"italic\":false}'},Lore:['{\"text\":\"Impetuosity\",\"color\":\"yellow\",\"italic\":false}'],CustomModelData:1611001}"
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 10,
+                    "name": "minecraft:name_tag",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{pkAncientTablet:1b,pkAncientTabletSafeguardInstinct:1b,Enchantments:[{}],display:{Name:'{\"text\":\"Safeguarded Ancient Tablet\",\"italic\":false}'},Lore:['{\"text\":\"Safeguard Instinct\",\"color\":\"yellow\",\"italic\":false}'],CustomModelData:1611002}"
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 10,
+                    "name": "minecraft:name_tag",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{pkAncientTablet:1b,pkAncientTabletRobustness:1b,Enchantments:[{}],display:{Name:'{\"text\":\"Robust Ancient Tablet\",\"italic\":false}'},Lore:['{\"text\":\"Robustness\",\"color\":\"yellow\",\"italic\":false}'],CustomModelData:1611003}"
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 10,
+                    "name": "minecraft:name_tag",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{pkAncientTablet:1b,pkAncientTabletWildCushioning:1b,Enchantments:[{}],display:{Name:'{\"text\":\"Wild Ancient Tablet\",\"italic\":false}'},Lore:['{\"text\":\"Wild Cushioning\",\"color\":\"yellow\",\"italic\":false}'],CustomModelData:1611004}"
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 5,
+                    "name": "minecraft:name_tag",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{pkAncientTablet:1b,pkAncientTabletLavaWalker:1b,Enchantments:[{}],display:{Name:'{\"text\":\"Warm Ancient Tablet\",\"italic\":false}'},Lore:['{\"text\":\"Lava Walker\",\"color\":\"yellow\",\"italic\":false}'],CustomModelData:1611004}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

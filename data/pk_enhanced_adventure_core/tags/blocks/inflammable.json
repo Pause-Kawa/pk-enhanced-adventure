@@ -1,0 +1,15 @@
+{
+    "replace": false,
+    "values": [
+        "#pk_enhanced_adventure_core:air",
+        "#pk_enhanced_adventure_core:plants",
+        "#minecraft:crops",
+        "#minecraft:leaves",
+        "#minecraft:logs_that_burn",
+        "#minecraft:planks",
+        "#minecraft:wooden_fences",
+        "#minecraft:wooden_slabs",
+        "#minecraft:wooden_stairs",
+        "#minecraft:wool"
+    ]
+}

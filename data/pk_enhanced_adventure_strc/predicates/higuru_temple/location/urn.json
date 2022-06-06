@@ -1,0 +1,23 @@
+[
+    {
+        "condition": "minecraft:location_check",
+        "offsetY": 1,
+        "predicate": {
+            "block": {
+                "blocks": [
+                    "minecraft:player_head"
+                ]
+            }
+        }
+    },
+    {
+        "condition": "minecraft:location_check",
+        "predicate": {
+            "block": {
+                "blocks": [
+                    "minecraft:polished_granite"
+                ]
+            }
+        }
+    }
+]
