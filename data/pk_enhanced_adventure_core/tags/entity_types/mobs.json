@@ -1,7 +1,14 @@
 {
     "values": [
         "#minecraft:skeletons",
-        "minecraft:zombie_villager",
-        "minecraft:villager"
+        "minecraft:cat",
+        "minecraft:evoker",
+        "minecraft:polar_bear",
+        "minecraft:silverfish",
+        "minecraft:stray",
+        "minecraft:villager",
+        "minecraft:vindicator",
+        "minecraft:witch",
+        "minecraft:zombie_villager"
     ]
 }

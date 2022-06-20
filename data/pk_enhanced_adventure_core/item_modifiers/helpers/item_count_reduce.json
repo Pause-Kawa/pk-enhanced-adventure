@@ -1,0 +1,13 @@
+[
+    {
+        "function": "minecraft:set_count",
+        "count": {
+            "type": "minecraft:score",
+            "target": {
+                "type": "minecraft:fixed",
+                "name": "%pk_temp"
+            },
+            "score": "pk.common.value"
+        }
+    }
+]

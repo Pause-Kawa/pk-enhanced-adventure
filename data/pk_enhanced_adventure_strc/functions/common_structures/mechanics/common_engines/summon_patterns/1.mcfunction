@@ -1,0 +1,2 @@
+data modify storage pk_enhanced_adventure:data Temp.Entity set from storage pk_enhanced_adventure:data Temp.Entities[0]
+execute positioned ~ ~ ~ run function pk_enhanced_adventure_strc:common_structures/mechanics/common_engines/summon_entity

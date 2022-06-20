@@ -2,11 +2,12 @@
 tag @s add pk_enhanced_adventure_checked
 
 # Store necessary data
-data modify storage pk_enhanced_adventure:data Entity set value {}
-data modify storage pk_enhanced_adventure:data Entity.Item set from entity @s Item
+data modify storage pk_enhanced_adventure:data Temp.Entity set value {}
+data modify storage pk_enhanced_adventure:data Temp.Entity.Item set from entity @s Item
 
 # Item dropped when some custom mobs died
-execute if data storage pk_enhanced_adventure:data Entity.Item.tag{pkDeathEvent:1b} run function pk_enhanced_adventure_core:events/mobs/on_death
+execute if data storage pk_enhanced_adventure:data Temp.Entity.Item.tag{pkDeathEvent:1b} run function pk_enhanced_adventure_core:events/mobs/on_death
 
 # Memorial Excerpt
-execute if data storage pk_enhanced_adventure:data Entity.Item.tag{pkMemorialExcerpt:1b} run tag @s add pk_memorial_excerpt
+execute if data storage pk_enhanced_adventure:data Temp.Entity.Item.tag{pkEnhancedAdventureItemEntityToTrack:1b} run tag @s add pk_enhanced_adventure_item_entity_to_track
+execute if data storage pk_enhanced_adventure:data Temp.Entity.Item.tag{pkMemorialExcerpt:1b} run tag @s add pk_memorial_excerpt

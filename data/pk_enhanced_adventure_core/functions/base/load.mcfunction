@@ -9,16 +9,23 @@
 # ----------------------------------------
 # Objective common to all PK data packs 
 scoreboard objectives add pk.common.value dummy
+scoreboard objectives add pk.common.ray.hit dummy
+scoreboard objectives add pk.common.ray.dist dummy
 # scoreboard objectives add pk.common.crafted.knowledge_book crafted:knowledge_book
 scoreboard objectives add pk.enhanced_adventure.pos.x dummy
 scoreboard objectives add pk.enhanced_adventure.pos.y dummy
 scoreboard objectives add pk.enhanced_adventure.pos.z dummy
-# General timer and delay
+# General scores for the data pack
 scoreboard objectives add pk.enhanced_adventure.timer dummy
 scoreboard objectives add pk.enhanced_adventure.delay dummy
 scoreboard objectives add pk.enhanced_adventure.sound_delay dummy
-# General counter
 scoreboard objectives add pk.enhanced_adventure.counter dummy
+scoreboard objectives add pk.enhanced_adventure.level dummy
+# Scores used for players
+scoreboard objectives add pk.enhanced_adventure.memorized.pos.x dummy
+scoreboard objectives add pk.enhanced_adventure.memorized.pos.y dummy
+scoreboard objectives add pk.enhanced_adventure.memorized.pos.z dummy
+scoreboard objectives add pk.enhanced_adventure.memorized.dimension dummy
 
 # ----------------------------------------
 # Helpers

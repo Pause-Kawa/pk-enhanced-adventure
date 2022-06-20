@@ -1,0 +1,25 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:player_interacted_with_entity",
+            "conditions": {
+                "item": {
+                    "nbt": "{pkAlchemistRegistry:1b}"
+                },
+                "entity": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type": "minecraft:villager",
+                            "nbt": "{VillagerData:{profession:\"minecraft:none\"},Tags:[\"pk_adult\"]}"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "pk_enhanced_adventure_core:items/alchemist_registry/player_interacted_with_villager"
+    }
+}

@@ -1,0 +1,3 @@
+execute as @e[type=villager,dx=0,tag=pk_adult,nbt={VillagerData:{profession:"minecraft:none"}},sort=nearest,limit=1] at @s run function pk_enhanced_adventure_core:items/alchemist_registry/raycast/found
+scoreboard players add %pk_temp pk.common.ray.dist 1
+execute unless score %pk_temp pk.common.ray.hit matches 1 if score %pk_temp pk.common.ray.dist matches ..99 positioned ^ ^ ^0.1 run function pk_enhanced_adventure_core:items/alchemist_registry/raycast/ray

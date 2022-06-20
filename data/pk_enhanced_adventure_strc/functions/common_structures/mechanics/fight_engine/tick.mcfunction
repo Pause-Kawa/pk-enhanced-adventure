@@ -1,6 +1,7 @@
 # Store the necessary data temporary
-data modify storage pk_enhanced_adventure:data FightEngine set value {}
-data modify storage pk_enhanced_adventure:data FightEngine set from entity @s data 
+data modify storage pk_enhanced_adventure:data Temp.Engine set value {}
+data modify storage pk_enhanced_adventure:data Temp.Engine set from entity @s data 
+data modify storage pk_enhanced_adventure:data Temp.Engine.Type set value "Fight"
 
 # Initialize
 execute if entity @s[tag=!pk_initialized] run function pk_enhanced_adventure_strc:common_structures/mechanics/fight_engine/initialize

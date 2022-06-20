@@ -1,0 +1,15 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "nbt": "{pkTeleportationPotion:1b}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "pk_enhanced_adventure_core:items/teleportation_potion/player_consumed"
+    }
+}
