@@ -11,7 +11,7 @@ data modify storage pk_enhanced_adventure:data Temp.DamageItem set value {Hand:"
 data modify storage pk_enhanced_adventure:data Temp.DamageItem.Hand set from storage pk_enhanced_adventure:data Temp.UsedHand
 function pk_enhanced_adventure_core:helpers/item_charge/reduce/trigger
 
-# Start the ray
+# Start ray
 scoreboard players set %pk_temp pk.common.ray.dist 0
 scoreboard players set %pk_temp pk.common.ray.hit 0
 execute anchored eyes positioned ^ ^ ^ run function pk_enhanced_adventure_core:items/magnet_hook/stages/launch/ray

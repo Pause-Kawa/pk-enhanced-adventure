@@ -32,6 +32,7 @@ scoreboard objectives add pk.enhanced_adventure.used.wfoas used:warped_fungus_on
 scoreboard objectives add pk.enhanced_adventure.magnet_hook.id dummy
 scoreboard objectives add pk.enhanced_adventure.magnet_hook.delay dummy
 scoreboard objectives add pk.enhanced_adventure.magnet_hook.tp_delay dummy
+scoreboard objectives add pk.enhanced_adventure.ppoas.delay dummy
 # Define constant
 scoreboard players set %pk_const_1000 pk.common.value 1000
 

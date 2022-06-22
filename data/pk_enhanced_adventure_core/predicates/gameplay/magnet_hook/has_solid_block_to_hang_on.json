@@ -1,0 +1,65 @@
+{
+    "condition": "minecraft:alternative",
+    "terms": [
+        {
+            "condition": "minecraft:inverted",
+            "term": {
+                "condition": "minecraft:location_check",
+                "offsetX": -1,
+                "predicate": {
+                    "block": {
+                        "tag": "pk_enhanced_adventure_core:magnet_hook_traversable"
+                    }
+                }
+            }
+        },
+        {
+            "condition": "minecraft:inverted",
+            "term": {
+                "condition": "minecraft:location_check",
+                "offsetX": 1,
+                "predicate": {
+                    "block": {
+                        "tag": "pk_enhanced_adventure_core:magnet_hook_traversable"
+                    }
+                }
+            }
+        },
+        {
+            "condition": "minecraft:inverted",
+            "term": {
+                "condition": "minecraft:location_check",
+                "offsetZ": -1,
+                "predicate": {
+                    "block": {
+                        "tag": "pk_enhanced_adventure_core:magnet_hook_traversable"
+                    }
+                }
+            }
+        },
+        {
+            "condition": "minecraft:inverted",
+            "term": {
+                "condition": "minecraft:location_check",
+                "offsetZ": 1,
+                "predicate": {
+                    "block": {
+                        "tag": "pk_enhanced_adventure_core:magnet_hook_traversable"
+                    }
+                }
+            }
+        },
+        {
+            "condition": "minecraft:inverted",
+            "term": {
+                "condition": "minecraft:location_check",
+                "offsetY": 2,
+                "predicate": {
+                    "block": {
+                        "tag": "pk_enhanced_adventure_core:magnet_hook_traversable"
+                    }
+                }
+            }
+        }
+    ]
+}

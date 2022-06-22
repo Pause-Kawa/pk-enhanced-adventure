@@ -1,14 +1,8 @@
 {
     "values": [
-        "#minecraft:skeletons",
-        "minecraft:cat",
-        "minecraft:evoker",
-        "minecraft:polar_bear",
-        "minecraft:silverfish",
-        "minecraft:stray",
-        "minecraft:villager",
-        "minecraft:vindicator",
-        "minecraft:witch",
-        "minecraft:zombie_villager"
+        "#pk_enhanced_adventure_core:hostile",
+        "#pk_enhanced_adventure_core:neutral",
+        "#pk_enhanced_adventure_core:passive",
+        "#pk_enhanced_adventure_core:boss"
     ]
 }

@@ -1,0 +1,1 @@
+give @s carrot_on_a_stick{display:{Name:'{"text":"Phenix Pepper On A Stick","color":"yellow","italic":false}',Lore:['[{"text":"Charge: ","color":"white","italic":false},{"text":"5"},{"text":" / "},{"text":"5"}]']},pkPhenixPepperOnAStick:1b,pkCharge:5,pkChargeMax:5,Enchantments:[{}],CustomModelData:1611000} 1
