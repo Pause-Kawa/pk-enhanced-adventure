@@ -26,6 +26,14 @@ scoreboard objectives add pk.enhanced_adventure.memorized.pos.x dummy
 scoreboard objectives add pk.enhanced_adventure.memorized.pos.y dummy
 scoreboard objectives add pk.enhanced_adventure.memorized.pos.z dummy
 scoreboard objectives add pk.enhanced_adventure.memorized.dimension dummy
+# Using item
+scoreboard objectives add pk.enhanced_adventure.used.coas used:carrot_on_a_stick
+scoreboard objectives add pk.enhanced_adventure.used.wfoas used:warped_fungus_on_a_stick
+scoreboard objectives add pk.enhanced_adventure.magnet_hook.id dummy
+scoreboard objectives add pk.enhanced_adventure.magnet_hook.delay dummy
+scoreboard objectives add pk.enhanced_adventure.magnet_hook.tp_delay dummy
+# Define constant
+scoreboard players set %pk_const_1000 pk.common.value 1000
 
 # ----------------------------------------
 # Helpers
@@ -44,7 +52,7 @@ team modify PKHiddenName nametagVisibility never
 # Forceload
 # ----------------------------------------
 # Forceloaded chunk (following Phi datapack standards)
-# forceload add -30000000 1600
+forceload add -30000000 1600
 
 # ----------------------------------------
 # Dev

@@ -1,0 +1,30 @@
+[
+    {
+        "function": "minecraft:copy_nbt",
+        "source": {
+            "type": "minecraft:storage",
+            "source": "pk_enhanced_adventure:data"
+        },
+        "ops": [
+            {
+                "source": "Temp.DamageItem.Charge.Value",
+                "target": "pkCharge",
+                "op": "replace"
+            }
+        ]
+    },
+    {
+        "function": "minecraft:copy_nbt",
+        "source": {
+            "type": "minecraft:storage",
+            "source": "pk_enhanced_adventure:data"
+        },
+        "ops": [
+            {
+                "source": "Temp.DamageItem.Charge.Lore",
+                "target": "display.Lore[-1]",
+                "op": "replace"
+            }
+        ]
+    }
+]

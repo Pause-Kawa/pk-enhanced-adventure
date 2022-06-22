@@ -1,5 +1,17 @@
+# ----------------------------------------
 # Dev
-execute at @e[type=marker] run particle soul_fire_flame ~ ~ ~ 0 0 0 0 1 normal @a[tag=pk_dev]
+# ----------------------------------------
+
+execute if entity @p[tag=pk_dev] at @e[type=marker] run particle soul_fire_flame ~ ~ ~ 0 0 0 0 1 normal @a[tag=pk_dev]
+
+# ----------------------------------------
+# Events
+# ----------------------------------------
+
+# Player used carrot on a stick
+execute as @a[scores={pk.enhanced_adventure.used.coas=1..}] at @s run function pk_enhanced_adventure_core:events/player/used_coas/check_hand
+# Player used warped fungus stick
+execute as @a[scores={pk.enhanced_adventure.used.wfoas=1..}] at @s run function pk_enhanced_adventure_core:events/player/used_wfoas/check_hand
 
 # ----------------------------------------
 # Entities
@@ -15,3 +27,17 @@ execute as @e[type=item,tag=pk_enhanced_adventure_item_entity_to_track] at @s ru
 execute as @e[type=skeleton,tag=pk_higuru_skeleton] at @s run function pk_enhanced_adventure_core:entities/higuru_skeleton/behavior/tick
 # Villager
 execute as @e[type=villager,tag=!pk_enhanced_adventure_ignored] run function pk_enhanced_adventure_core:entities/villager/common/tick
+
+# ----------------------------------------
+# Items
+# ----------------------------------------
+
+# Magnet Hook
+# - Player using the Magnet Hook
+execute as @a[tag=pk_using_magnet_hook] at @s run function pk_enhanced_adventure_core:items/magnet_hook/player_tick
+# - Clear obsolete latch points (can happen if a player is being killed using the Magnet Hook)
+execute as @e[type=marker,tag=pk_magnet_hook_latch_point,tag=pk_reached] at @s unless entity @p[distance=..5] run kill @s
+
+# ----------------------------------------
+# Bewitchements
+# ----------------------------------------
