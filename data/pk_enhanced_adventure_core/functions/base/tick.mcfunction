@@ -10,8 +10,10 @@ execute if entity @p[tag=pk_dev] at @e[type=marker] run particle soul_fire_flame
 
 # Player used carrot on a stick
 execute as @a[scores={pk.enhanced_adventure.used.coas=1..}] at @s run function pk_enhanced_adventure_core:events/player/used_coas/check_hand
-# Player used warped fungus stick
+# Player used warped fungus on a stick
 execute as @a[scores={pk.enhanced_adventure.used.wfoas=1..}] at @s run function pk_enhanced_adventure_core:events/player/used_wfoas/check_hand
+# Player used bow
+execute as @a[scores={pk.enhanced_adventure.used.bow=1..}] at @s run function pk_enhanced_adventure_core:events/player/used_bow/trigger
 
 # ----------------------------------------
 # Entities
@@ -20,8 +22,8 @@ execute as @a[scores={pk.enhanced_adventure.used.wfoas=1..}] at @s run function 
 # All
 team join PKHiddenName @e[type=#pk_enhanced_adventure_core:tracked_mobs,tag=pk_hidden_name,team=!PKHiddenName]
 execute as @e[type=#pk_enhanced_adventure_core:tracked_mobs,tag=pk_entity_fire_resistant] run data modify entity @s Fire set value 0s
-# Arrow 
-execute as @e[type=arrow,tag=!pk_enhanced_adventure_checked] at @s run function pk_enhanced_adventure_core:entities/arrow/initialize
+# Arrow
+execute as @e[type=#minecraft:arrows,tag=!pk_enhanced_adventure_checked] at @s run function pk_enhanced_adventure_core:entities/arrow/initialize
 # Item
 execute as @e[type=item,tag=!pk_enhanced_adventure_checked] at @s run function pk_enhanced_adventure_core:entities/item/initialize
 execute as @e[type=item,tag=pk_enhanced_adventure_item_entity_to_track] at @s run function pk_enhanced_adventure_core:entities/item/tick

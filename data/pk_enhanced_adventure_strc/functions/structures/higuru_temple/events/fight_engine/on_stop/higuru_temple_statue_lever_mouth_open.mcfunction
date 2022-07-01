@@ -1,0 +1,3 @@
+# Open statue lever mouth
+execute store result score %pk_temp pk.enhanced_adventure.trigger.value run data get storage pk_enhanced_adventure:data Temp.Engine.TriggerValue
+execute as @e[type=marker,tag=pk_higuru_marker_temple,tag=pk_lever,distance=..8] if score %pk_temp pk.enhanced_adventure.trigger.value = @s pk.enhanced_adventure.trigger.value run function pk_enhanced_adventure_strc:structures/higuru_temple/mechanics/statue_lever/mouth_open

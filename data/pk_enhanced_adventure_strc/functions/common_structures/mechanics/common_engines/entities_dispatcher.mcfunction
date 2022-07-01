@@ -5,6 +5,7 @@ execute if data storage pk_enhanced_adventure:data Temp.Entity{Type:"higuru_skel
 execute if data storage pk_enhanced_adventure:data Temp.Entity{Type:"higuru_skeleton_guardian"} run function pk_enhanced_adventure_core:entities/higuru_skeleton_guardian/summon/single
 
 # Vanilla mobs
+execute if data storage pk_enhanced_adventure:data Temp.Entity{Type:"armor_stand"} run summon armor_stand
 execute if data storage pk_enhanced_adventure:data Temp.Entity{Type:"cat"} run summon cat
 execute if data storage pk_enhanced_adventure:data Temp.Entity{Type:"evoker"} run summon evoker
 execute if data storage pk_enhanced_adventure:data Temp.Entity{Type:"silverfish"} run summon silverfish
