@@ -1,10 +1,11 @@
+# If the player is already hunging with magnet hook, release it
+execute if entity @s[tag=pk_magnet_hook_hung] run function pk_enhanced_adventure_core:items/magnet_hook/stages/launch/detach
+
 # Add the using tag, reset the player use delay and assing a new id of magnet hook use
 tag @s add pk_using_magnet_hook
 scoreboard players set @s pk.enhanced_adventure.magnet_hook.delay 40
 scoreboard players add %pk_magnet_hook_id pk.common.value 1
 scoreboard players operation @s pk.enhanced_adventure.magnet_hook.id = %pk_magnet_hook_id pk.common.value
-
-# If the player is already hunging with magnet hook, release it
 
 # Reduce durability on use
 data modify storage pk_enhanced_adventure:data Temp.DamageItem set value {Hand:"mainhand"}

@@ -7,6 +7,7 @@ execute if data storage pk_enhanced_adventure:data Temp.Entity{Type:"higuru_skel
 # Vanilla mobs
 execute if data storage pk_enhanced_adventure:data Temp.Entity{Type:"armor_stand"} run summon armor_stand
 execute if data storage pk_enhanced_adventure:data Temp.Entity{Type:"cat"} run summon cat
+execute if data storage pk_enhanced_adventure:data Temp.Entity{Type:"cave_spider"} run summon cave_spider
 execute if data storage pk_enhanced_adventure:data Temp.Entity{Type:"evoker"} run summon evoker
 execute if data storage pk_enhanced_adventure:data Temp.Entity{Type:"silverfish"} run summon silverfish
 execute if data storage pk_enhanced_adventure:data Temp.Entity{Type:"vindicator"} run summon vindicator
