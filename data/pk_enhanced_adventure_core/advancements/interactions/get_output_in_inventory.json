@@ -1,0 +1,18 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "player": [],
+                "items": [
+                    {
+                        "nbt": "{pkOutputStack:1b}"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "pk_enhanced_adventure_core:mechanics/ancient_altar/events/player_get_output_in_inventory"
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+        "equipment": {
+            "mainhand": {
+                "tag": "pk_enhanced_adventure_core:ancient_altar/accepted_tools/all"
+            }
+        }
+    }
+}

@@ -1,0 +1,26 @@
+{
+	"values": [
+        "#pk_enhanced_adventure_core:sets/axes",
+        "#pk_enhanced_adventure_core:sets/boots",
+        "#pk_enhanced_adventure_core:sets/chestplates",
+        "#pk_enhanced_adventure_core:sets/helmets",
+        "#pk_enhanced_adventure_core:sets/hoes",
+        "#pk_enhanced_adventure_core:sets/leggings",
+        "#pk_enhanced_adventure_core:sets/pickaxes",
+        "#pk_enhanced_adventure_core:sets/shovels",
+        "#pk_enhanced_adventure_core:sets/swords",
+        "minecraft:bow",
+        "minecraft:carrot_on_a_stick",
+        "minecraft:crossbow",
+        "minecraft:compass",
+        "minecraft:clock",
+        "minecraft:fishing_rod",
+        "minecraft:flint_and_steel",
+        "minecraft:recovery_compass",
+        "minecraft:shears",
+        "minecraft:shield",
+        "minecraft:spyglass",
+        "minecraft:trident",
+        "minecraft:warped_fungus_on_a_stick"
+	]
+}

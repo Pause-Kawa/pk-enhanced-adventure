@@ -1,0 +1,2 @@
+data modify storage pk_enhanced_adventure:data AncientAltar.Gui.Current[{Slot:14b}] set from storage pk_enhanced_adventure:data AncientAltar.Gui.Default.Items[{Slot:14b}]
+data modify block ~ ~ ~ Items set from storage pk_enhanced_adventure:data AncientAltar.Gui.Current

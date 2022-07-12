@@ -1,0 +1,20 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:item_used_on_block",
+            "conditions": {
+                "location": {
+                    "block": {
+                        "blocks": [
+                            "minecraft:barrel"
+                        ],
+                        "nbt": "{CustomName:'{\"italic\":false,\"text\":\"Ancient Altar§r\"}'}"
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "pk_enhanced_adventure_core:mechanics/ancient_altar/events/player_opened"
+    }
+}

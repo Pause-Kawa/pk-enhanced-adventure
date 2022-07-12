@@ -8,6 +8,8 @@ execute if entity @p[tag=pk_dev] at @e[type=marker] run particle soul_fire_flame
 # Events
 # ----------------------------------------
 
+# Player joined back
+execute as @a[scores={pk.enhanced_adventure.leave_game=1..}] at @s run function pk_enhanced_adventure_core:events/player/joined_back/trigger
 # Player used carrot on a stick
 execute as @a[scores={pk.enhanced_adventure.used.coas=1..}] at @s run function pk_enhanced_adventure_core:events/player/used_coas/check_hand
 # Player used warped fungus on a stick
@@ -29,6 +31,8 @@ execute as @e[type=item,tag=!pk_enhanced_adventure_checked] at @s run function p
 execute as @e[type=item,tag=pk_enhanced_adventure_item_entity_to_track] at @s run function pk_enhanced_adventure_core:entities/item/tick
 # Higuru Skeleton
 execute as @e[type=skeleton,tag=pk_higuru_skeleton] at @s run function pk_enhanced_adventure_core:entities/higuru_skeleton/behavior/tick
+# Marker
+execute as @e[type=marker,tag=pk_enhanced_adventure_core_marker] at @s run function pk_enhanced_adventure_core:entities/marker/dispatcher
 # Villager
 execute as @e[type=villager,tag=!pk_enhanced_adventure_ignored] run function pk_enhanced_adventure_core:entities/villager/common/tick
 

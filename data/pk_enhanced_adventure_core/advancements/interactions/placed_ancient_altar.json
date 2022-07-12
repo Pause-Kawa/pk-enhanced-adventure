@@ -1,0 +1,15 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+                "item": {
+                    "nbt": "{pkAncientAltar:1b}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "pk_enhanced_adventure_core:mechanics/ancient_altar/events/player_placed"
+    }
+}

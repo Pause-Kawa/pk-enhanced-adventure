@@ -1,0 +1,1 @@
+give @s dropper{pkAncientAltar:1b,display:{Name:'{"italic":false,"color":"white","text":"Ancient Altar"}'},HideFlags:1,Enchantments:[{id:"minecraft:power",lvl:1s}],BlockEntityTag:{Lock:"PlaceholderForAncientAltar§r"},CustomModelData:1611404} 1
