@@ -10,6 +10,6 @@
         }
     },
     "rewards": {
-        "function": "pk_enhanced_adventure_core:mechanics/ancient_altar/events/player_placed"
+        "function": "pk_enhanced_adventure_core:blocks/ancient_altar/events/player_placed"
     }
 }

@@ -1,6 +1,8 @@
 {
 	"values": [
         "minecraft:barrier",
-        "minecraft:black_stained_glass_pane"
+        "minecraft:black_stained_glass_pane",
+        "minecraft:iron_pickaxe",
+        "minecraft:name_tag"
 	]
 }

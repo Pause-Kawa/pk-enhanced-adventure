@@ -52,7 +52,7 @@ function pk_enhanced_adventure_core:helpers/random/load
 # Mechanics
 # ----------------------------------------
 # Define Ancient Altar GUI
-function pk_enhanced_adventure_core:mechanics/ancient_altar/helpers/load
+function pk_enhanced_adventure_core:blocks/ancient_altar/helpers/load
 
 # ----------------------------------------
 # Teams

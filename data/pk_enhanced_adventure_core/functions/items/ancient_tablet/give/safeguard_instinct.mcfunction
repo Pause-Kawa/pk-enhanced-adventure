@@ -1,0 +1,1 @@
+give @s name_tag{display:{Name:'{"text":"Ancient Tablet","italic":false}',Lore:['{"text":"Safeguard Instinct","color":"yellow","italic":false}']},pkAncientTablet:1b,pkSafeguardInstinct:1b,Enchantments:[{}],CustomModelData:1611405} 1

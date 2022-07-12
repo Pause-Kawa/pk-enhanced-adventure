@@ -13,6 +13,6 @@
         }
     },
     "rewards": {
-        "function": "pk_enhanced_adventure_core:mechanics/ancient_altar/events/player_get_output_in_inventory"
+        "function": "pk_enhanced_adventure_core:blocks/ancient_altar/events/player_get_output_in_inventory"
     }
 }

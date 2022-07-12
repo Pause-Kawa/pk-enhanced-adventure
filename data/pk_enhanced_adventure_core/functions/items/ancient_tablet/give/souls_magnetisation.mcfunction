@@ -1,0 +1,1 @@
+give @s name_tag{display:{Name:'{"text":"Ancient Tablet","italic":false}',Lore:['{"text":"Souls Magnetisation","color":"yellow","italic":false}']},pkAncientTablet:1b,pkSoulsMagnetisation:1b,Enchantments:[{}],CustomModelData:1611405} 1
