@@ -5,11 +5,20 @@
 execute if entity @p[tag=pk_dev] at @e[type=marker] run particle soul_fire_flame ~ ~ ~ 0 0 0 0 1 normal @a[tag=pk_dev]
 
 # ----------------------------------------
+# Settings
+# ----------------------------------------
+
+# Set gamerule keepInventory to true for Allegiance bewitchment (can be disabled by changing the score value to 1)
+execute unless score %pk_enhanced_adventure_settings_enable_allegiance_bewitchment pk.common.value matches 0 run gamerule keepInventory true
+
+# ----------------------------------------
 # Events
 # ----------------------------------------
 
 # Player joined back
 execute as @a[scores={pk.enhanced_adventure.leave_game=1..}] at @s run function pk_enhanced_adventure_core:events/player/joined_back/trigger
+# Player is dead
+execute as @a[scores={pk.enhanced_adventure.death_count=1..}] at @s run function pk_enhanced_adventure_core:events/player/is_dead/trigger
 # Player used carrot on a stick
 execute as @a[scores={pk.enhanced_adventure.used.coas=1..}] at @s run function pk_enhanced_adventure_core:events/player/used_coas/check_hand
 # Player used warped fungus on a stick
@@ -24,6 +33,8 @@ execute as @a[scores={pk.enhanced_adventure.used.bow=1..}] at @s run function pk
 # All
 team join PKHiddenName @e[type=#pk_enhanced_adventure_core:tracked_mobs,tag=pk_hidden_name,team=!PKHiddenName]
 execute as @e[type=#pk_enhanced_adventure_core:tracked_mobs,tag=pk_entity_fire_resistant] run data modify entity @s Fire set value 0s
+# Air toggling (fix render issue for projectiles and items entities)
+execute as @e[type=#pk_enhanced_adventure_core:air_toggling,tag=pk_enhanced_adventure_air_toggling] run function pk_enhanced_adventure_core:helpers/air_toggling/tick
 # Arrow
 execute as @e[type=#minecraft:arrows,tag=!pk_enhanced_adventure_checked] at @s run function pk_enhanced_adventure_core:entities/arrow/initialize
 # Item

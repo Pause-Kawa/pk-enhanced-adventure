@@ -11,6 +11,7 @@
 scoreboard objectives add pk.common.value dummy
 scoreboard objectives add pk.common.ray.hit dummy
 scoreboard objectives add pk.common.ray.dist dummy
+scoreboard objectives add pk.common.air_toggling.delay dummy
 # General scores for the data pack
 scoreboard objectives add pk.enhanced_adventure.pos.x dummy
 scoreboard objectives add pk.enhanced_adventure.pos.y dummy
@@ -26,6 +27,7 @@ scoreboard objectives add pk.enhanced_adventure.memorized.pos.y dummy
 scoreboard objectives add pk.enhanced_adventure.memorized.pos.z dummy
 scoreboard objectives add pk.enhanced_adventure.memorized.dimension dummy
 scoreboard objectives add pk.enhanced_adventure.leave_game custom:leave_game
+scoreboard objectives add pk.enhanced_adventure.death_count deathCount
 # Used items
 scoreboard objectives add pk.enhanced_adventure.used.coas used:carrot_on_a_stick
 scoreboard objectives add pk.enhanced_adventure.used.wfoas used:warped_fungus_on_a_stick
@@ -53,6 +55,9 @@ function pk_enhanced_adventure_core:helpers/random/load
 # ----------------------------------------
 # Define Ancient Altar GUI
 function pk_enhanced_adventure_core:blocks/ancient_altar/helpers/load
+# Bewitchments 
+# - Force the keepInventory gamerule for Allegiance mechanic
+execute unless score %pk_enhanced_adventure_settings_enable_allegiance_bewitchment pk.common.value matches 0..1 run scoreboard players set %pk_enhanced_adventure_settings_enable_allegiance_bewitchment pk.common.value 1
 
 # ----------------------------------------
 # Teams
@@ -72,5 +77,7 @@ forceload add -30000000 1600
 # ----------------------------------------
 scoreboard players add %pk_enhanced_adventure_dev_mode pk.common.value 0
 
+# ----------------------------------------
 # Logs
+# ----------------------------------------
 tellraw @a [{"text":"Loaded ","color":"yellow"},{"text":"PK Enhanced Adventure","color":"aqua","bold":true},{"text":" successfully","color":"yellow"}]
