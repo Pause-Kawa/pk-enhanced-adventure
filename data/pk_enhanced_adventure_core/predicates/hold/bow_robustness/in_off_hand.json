@@ -1,0 +1,11 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+        "equipment": {
+            "offhand": {
+                "nbt": "{pkBewitchments:{Robustness:1b}}"
+            }
+        }
+    }
+}

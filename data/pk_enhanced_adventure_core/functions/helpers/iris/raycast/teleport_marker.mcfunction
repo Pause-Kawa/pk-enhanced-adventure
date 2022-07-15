@@ -1,7 +1,7 @@
 # Sets coordinates of the ray marker to the calculated block coordinates (int only)
 # The entity is teleported at the corner of the block
 #
-# @within pk_enhanced_adventure:iris/raycast/loop
+# @within pk_enhanced_adventure_core:helpers/iris/raycast/loop
 # @context a marker
 
 # Save to storage

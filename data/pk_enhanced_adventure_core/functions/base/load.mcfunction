@@ -39,6 +39,7 @@ scoreboard objectives add pk.enhanced_adventure.magnet_hook.tp_delay dummy
 scoreboard objectives add pk.enhanced_adventure.ppoas.delay dummy
 # Custom mechanics
 scoreboard objectives add pk.enhanced_adventure.ancient_altar.interaction.id dummy
+scoreboard objectives add pk.enhanced_adventure.robustness.delay dummy
 # Define constants
 scoreboard players set %pk_const_1000 pk.common.value 1000
 

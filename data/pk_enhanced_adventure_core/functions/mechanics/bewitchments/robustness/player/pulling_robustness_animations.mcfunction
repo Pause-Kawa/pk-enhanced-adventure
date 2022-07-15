@@ -1,0 +1,2 @@
+execute if entity @s[predicate=pk_enhanced_adventure_core:hold/bow_robustness/in_main_hand] anchored eyes positioned ^-0.26 ^-0.06 ^0.52 run particle electric_spark ~ ~ ~ 0 0 0 0.16 1
+execute if entity @s[predicate=pk_enhanced_adventure_core:hold/bow_robustness/in_off_hand] anchored eyes positioned ^0.26 ^-0.06 ^0.52 run particle electric_spark ~ ~ ~ 0 0 0 0.16 1

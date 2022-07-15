@@ -1,7 +1,7 @@
 # Gets the current coordinates and rotation using a marker.
 #
 # @context a marker entity at context position and a rotation
-# @within pk_enhanced_adventure:iris/get_coordinates/main
+# @within pk_enhanced_adventure_core:helpers/iris/get_coordinates/main
 
 # Get position (integer coordinates)
 data modify storage pk_enhanced_adventure:iris.data Pos set from entity @s Pos

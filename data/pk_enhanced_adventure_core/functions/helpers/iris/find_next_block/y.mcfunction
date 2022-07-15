@@ -1,6 +1,6 @@
 # Calculates the position of the ray when it hits the next block, assuming that the next block is above or below the current block
 #
-# @within pk_enhanced_adventure:iris/find_next_block/main
+# @within pk_enhanced_adventure_core:helpers/iris/find_next_block/main
 
 # Set the distance to the next block on the y axis as the distance to the next block
 scoreboard players operation $distance_to_next_block iris = $distance_to_next_block_on_y_axis iris

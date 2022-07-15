@@ -64,3 +64,7 @@ execute as @a[tag=pk_using_ppoas] at @s run function pk_enhanced_adventure_core:
 # ----------------------------------------
 # Bewitchements
 # ----------------------------------------
+
+# Robustness
+execute as @a[predicate=pk_enhanced_adventure_core:hold/bow_robustness/in_any_hand] at @s run function pk_enhanced_adventure_core:mechanics/bewitchments/robustness/player/tick
+execute as @e[type=#minecraft:arrows,tag=pk_robustness_arrow,tag=!pk_done] at @s run function pk_enhanced_adventure_core:mechanics/bewitchments/robustness/arrow/tick 

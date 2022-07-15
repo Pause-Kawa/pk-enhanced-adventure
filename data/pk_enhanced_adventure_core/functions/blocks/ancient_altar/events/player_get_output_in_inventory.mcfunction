@@ -49,5 +49,3 @@ execute if data storage pk_enhanced_adventure:data Temp.Item{Slot:35b} run item 
 
 # Remove the armor stand
 kill @e[type=armor_stand,tag=pk_current_entity,distance=..0.1]
-
-say Get
