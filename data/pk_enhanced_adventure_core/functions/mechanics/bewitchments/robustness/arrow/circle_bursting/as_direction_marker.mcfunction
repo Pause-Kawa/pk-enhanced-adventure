@@ -1,0 +1,5 @@
+# Converting arrow's Motion into rotation to trigger the animation (we need to use this trick since arrow's rotation is bugged)
+data modify entity @s Pos set from entity @e[type=#arrows,tag=pk_current_arrow,limit=1] Motion
+execute if score %pk_temp pk.enhanced_adventure.robustness.delay matches 1 positioned 0.0 0 0.0 facing entity @s feet positioned as @e[type=#arrows,tag=pk_current_arrow,limit=1] run function pk_enhanced_adventure_core:mechanics/bewitchments/robustness/arrow/circle_bursting/animations_large
+execute if score %pk_temp pk.enhanced_adventure.robustness.delay matches 3 positioned 0.0 0 0.0 facing entity @s feet positioned as @e[type=#arrows,tag=pk_current_arrow,limit=1] run function pk_enhanced_adventure_core:mechanics/bewitchments/robustness/arrow/circle_bursting/animations_small
+kill @s
