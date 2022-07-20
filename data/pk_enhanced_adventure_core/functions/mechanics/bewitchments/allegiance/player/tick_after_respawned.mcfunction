@@ -1,0 +1,3 @@
+scoreboard players add @s pk.enhanced_adventure.allegiance.delay 1
+execute if entity @s[scores={pk.enhanced_adventure.allegiance.delay=1}] run function pk_enhanced_adventure_core:mechanics/bewitchments/allegiance/player/waiting_animation
+execute if entity @s[scores={pk.enhanced_adventure.allegiance.delay=10}] run function pk_enhanced_adventure_core:mechanics/bewitchments/allegiance/player/retrieve_an_item_from_marker

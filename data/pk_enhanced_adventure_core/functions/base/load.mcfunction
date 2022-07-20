@@ -16,6 +16,7 @@ scoreboard objectives add pk.common.air_toggling.delay dummy
 scoreboard objectives add pk.enhanced_adventure.pos.x dummy
 scoreboard objectives add pk.enhanced_adventure.pos.y dummy
 scoreboard objectives add pk.enhanced_adventure.pos.z dummy
+scoreboard objectives add pk.enhanced_adventure.motion.y dummy
 scoreboard objectives add pk.enhanced_adventure.timer dummy
 scoreboard objectives add pk.enhanced_adventure.delay dummy
 scoreboard objectives add pk.enhanced_adventure.sound_delay dummy
@@ -39,6 +40,8 @@ scoreboard objectives add pk.enhanced_adventure.magnet_hook.tp_delay dummy
 scoreboard objectives add pk.enhanced_adventure.ppoas.delay dummy
 # Custom mechanics
 scoreboard objectives add pk.enhanced_adventure.ancient_altar.interaction.id dummy
+scoreboard objectives add pk.enhanced_adventure.allegiance.id dummy
+scoreboard objectives add pk.enhanced_adventure.allegiance.delay dummy
 scoreboard objectives add pk.enhanced_adventure.robustness.delay dummy
 # Define constants
 scoreboard players set %pk_const_1000 pk.common.value 1000

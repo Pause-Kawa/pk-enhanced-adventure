@@ -1,0 +1,27 @@
+{
+    "condition": "alternative",
+    "terms": [
+        {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "equipment": {
+                    "mainhand": {
+                        "nbt": "{pkBewitchments:{SoulsMagnetisation:1b}}"
+                    }
+                }
+            }
+        },
+        {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "equipment": {
+                    "offhand": {
+                        "nbt": "{pkBewitchments:{SoulsMagnetisation:1b}}"
+                    }
+                }
+            }
+        }
+    ]
+}

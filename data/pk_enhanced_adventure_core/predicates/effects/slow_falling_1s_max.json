@@ -1,0 +1,14 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+        "effects": {
+            "minecraft:slow_falling": {
+                "duration": {
+                    "min": 0,
+                    "max": 20
+                }
+            }
+        }
+    }
+}

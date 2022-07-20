@@ -66,5 +66,11 @@ execute as @a[tag=pk_using_ppoas] at @s run function pk_enhanced_adventure_core:
 # ----------------------------------------
 
 # Robustness
-execute as @a[predicate=pk_enhanced_adventure_core:hold/bow_robustness/in_any_hand] at @s run function pk_enhanced_adventure_core:mechanics/bewitchments/robustness/player/tick
-execute as @e[type=#minecraft:arrows,tag=pk_robustness_arrow,tag=!pk_done] at @s run function pk_enhanced_adventure_core:mechanics/bewitchments/robustness/arrow/tick 
+execute as @a[predicate=pk_enhanced_adventure_core:hold/item_with_robustness/in_any_hand] at @s run function pk_enhanced_adventure_core:mechanics/bewitchments/robustness/player/tick
+execute as @e[type=#minecraft:arrows,tag=pk_robustness_arrow,tag=!pk_done] at @s run function pk_enhanced_adventure_core:mechanics/bewitchments/robustness/arrow/tick
+# Allegiance (executing as alive players only)
+execute as @e[type=player,tag=pk_waiting_for_allegiance_items] at @s run function pk_enhanced_adventure_core:mechanics/bewitchments/allegiance/player/tick_after_respawned
+# Souls Magnetisation
+function pk_enhanced_adventure_core:mechanics/bewitchments/souls_magnetisation/tick
+# Wild Cushioning
+function pk_enhanced_adventure_core:mechanics/bewitchments/wild_cushioning/tick

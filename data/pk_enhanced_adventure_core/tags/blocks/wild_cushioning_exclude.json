@@ -1,0 +1,15 @@
+{
+    "values": [
+        "#pk_enhanced_adventure_core:air",
+        "#pk_enhanced_adventure_core:liquids",
+        "#pk_enhanced_adventure_core:plants",
+        "#minecraft:buttons",
+        "#minecraft:climbable",
+        "#minecraft:wall_signs",
+        "#minecraft:standing_signs",
+        "minecraft:fire",
+        "minecraft:redstone_wire",
+        "minecraft:soul_fire",
+        "minecraft:tripwire"
+    ]
+}

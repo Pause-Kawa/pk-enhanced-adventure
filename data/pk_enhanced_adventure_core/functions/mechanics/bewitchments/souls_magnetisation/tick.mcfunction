@@ -1,0 +1,2 @@
+execute as @a[predicate=pk_enhanced_adventure_core:hold/item_with_souls_magnetisation/in_any_hand] at @s run function pk_enhanced_adventure_core:mechanics/bewitchments/souls_magnetisation/player/tick
+execute as @e[type=item,tag=pk_souls_magnetisation_attracted] at @s unless entity @p[predicate=pk_enhanced_adventure_core:hold/item_with_souls_magnetisation/in_any_hand,distance=0.1..7] run function pk_enhanced_adventure_core:mechanics/bewitchments/souls_magnetisation/item/stop_attraction
