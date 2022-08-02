@@ -1,0 +1,2 @@
+# Specific to Steam Worker
+execute if entity @s[tag=pk_steam_worker,tag=pk_frozen] unless block ~ ~1 ~ ice unless block ~ ~2 ~ ice run function pk_enhanced_adventure_core:entities/zombie_villager/steam_worker/free_from_ice

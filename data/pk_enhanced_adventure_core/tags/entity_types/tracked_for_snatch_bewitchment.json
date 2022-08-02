@@ -1,0 +1,15 @@
+{
+    "values": [
+        "#minecraft:skeletons",
+        "minecraft:allay",
+        "minecraft:drowned",
+        "minecraft:husk",
+        "minecraft:piglin_brute",
+        "minecraft:pillager",
+        "minecraft:stray",
+        "minecraft:vindicator",
+        "minecraft:vex",
+        "minecraft:zombie",
+        "minecraft:zombie_villager"
+    ]
+}

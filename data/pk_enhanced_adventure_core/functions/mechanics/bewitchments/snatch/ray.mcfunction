@@ -1,0 +1,3 @@
+execute as @e[type=#pk_enhanced_adventure_core:tracked_for_snatch_bewitchment,dx=0,nbt={HurtTime:10s},sort=nearest,limit=1] at @s run function pk_enhanced_adventure_core:mechanics/bewitchments/snatch/on_target_found
+scoreboard players add %pk_temp pk.common.ray.dist 1
+execute unless score %pk_temp pk.common.ray.hit matches 1 if score %pk_temp pk.common.ray.dist matches ..99 positioned ^ ^ ^0.1 run function pk_enhanced_adventure_core:mechanics/bewitchments/snatch/ray

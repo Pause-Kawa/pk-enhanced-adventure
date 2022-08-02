@@ -1,4 +1,4 @@
 # Summon Alchemist  
-summon villager ~ ~ ~ {Tags:["pk_enhanced_adventure_mob","pk_villager","pk_alchemist_master","pk_hidden_name","pk_current_entity"],VillagerData:{profession:"cleric",level:1,type:"swamp"},CustomName:'"Alchemist"',Xp:1,Offers:{Recipes:[]},ArmorItems:[{},{},{},{id:"minecraft:mangrove_propagule",Count:1b}],ArmorDropChances:[0.085f,0.085f,0.085f,0f]}
+summon villager ~ ~ ~ {Tags:["pk_enhanced_adventure_mob","pk_villager","pk_alchemist","pk_hidden_name","pk_current_entity"],VillagerData:{profession:"minecraft:cleric",level:1,type:"minecraft:swamp"},CustomName:'"Alchemist"',Xp:1,Offers:{Recipes:[]},ArmorItems:[{},{},{},{id:"minecraft:mangrove_propagule",Count:1b}],ArmorDropChances:[0.085f,0.085f,0.085f,0f]}
 execute as @e[type=villager,tag=pk_current_entity,limit=1,sort=nearest,distance=..0.1] run function pk_enhanced_adventure_core:entities/villager/alchemist/reach_level/1
 tag @e[type=villager,tag=pk_current_entity,limit=1,sort=nearest,distance=..0.1] remove pk_current_entity

@@ -7,6 +7,3 @@ data modify entity @e[type=item,tag=pk_current_item,distance=..16,limit=1] Item 
 
 # Update current storage
 data remove storage pk_enhanced_adventure:data AncientAltar.Gui.Current[{Slot:16b}]
-
-# TO_REMOVE
-say Bad Output Stack

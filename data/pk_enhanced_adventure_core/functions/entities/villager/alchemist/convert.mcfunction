@@ -1,6 +1,6 @@
 # Add data and team to the villager
 team join PKHiddenName @s
-data merge entity @s {Tags:["pk_enhanced_adventure_mob","pk_villager","pk_alchemist","pk_hidden_name"],VillagerData:{profession:"cleric",level:1,type:"swamp"},CustomName:'"Alchemist"',Xp:1,Offers:{Recipes:[]},ArmorItems:[{},{},{},{id:"minecraft:mangrove_propagule",Count:1b}],ArmorDropChances:[0.085f,0.085f,0.085f,0f]}
+data merge entity @s {Tags:["pk_enhanced_adventure_mob","pk_villager","pk_alchemist","pk_hidden_name"],VillagerData:{profession:"minecraft:cleric",level:1,type:"minecraft:swamp"},CustomName:'"Alchemist"',Xp:1,Offers:{Recipes:[]},ArmorItems:[{},{},{},{id:"minecraft:mangrove_propagule",Count:1b}],ArmorDropChances:[0.085f,0.085f,0.085f,0f]}
 
 # Set level and offers
 function pk_enhanced_adventure_core:entities/villager/alchemist/reach_level/1

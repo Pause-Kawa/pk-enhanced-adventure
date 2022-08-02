@@ -46,6 +46,9 @@ execute as @e[type=skeleton,tag=pk_higuru_skeleton] at @s run function pk_enhanc
 execute as @e[type=marker,tag=pk_enhanced_adventure_core_marker] at @s run function pk_enhanced_adventure_core:entities/marker/dispatcher
 # Villager
 execute as @e[type=villager,tag=!pk_enhanced_adventure_ignored] run function pk_enhanced_adventure_core:entities/villager/common/tick
+# Zombie villager
+execute as @e[type=zombie_villager,tag=!pk_enhanced_adventure_checked] at @s run function pk_enhanced_adventure_core:entities/zombie_villager/common/initialize
+execute as @e[type=zombie_villager,tag=pk_enhanced_adventure_zombie_villager_custom_profession] at @s run function pk_enhanced_adventure_core:entities/zombie_villager/common/tick_custom_profession
 
 # ----------------------------------------
 # Items
@@ -60,6 +63,7 @@ execute as @e[type=marker,tag=pk_magnet_hook_latch_point,tag=pk_reached] at @s u
 execute as @e[type=arrow,tag=pk_armed_rain_dissipater] at @s run function pk_enhanced_adventure_core:items/rain_dissipater/tick
 # Phenix Pepper On A Stick
 execute as @a[tag=pk_using_ppoas] at @s run function pk_enhanced_adventure_core:items/phenix_pepper_on_a_stick/player_tick
+execute as @e[type=#pk_enhanced_adventure_core:mobs,type=!#pk_enhanced_adventure_core:exclude_inflammable,tag=pk_hurt_by_ppoas] run function pk_enhanced_adventure_core:items/phenix_pepper_on_a_stick/target_tick
 
 # ----------------------------------------
 # Bewitchements
@@ -74,3 +78,5 @@ execute as @e[type=player,tag=pk_waiting_for_allegiance_items] at @s run functio
 function pk_enhanced_adventure_core:mechanics/bewitchments/souls_magnetisation/tick
 # Wild Cushioning
 function pk_enhanced_adventure_core:mechanics/bewitchments/wild_cushioning/tick
+# Safeguard Instinct
+execute as @a[predicate=pk_enhanced_adventure_core:wear/safeguard_instinct_item] at @s run function pk_enhanced_adventure_core:mechanics/bewitchments/safeguard_instinct/tick

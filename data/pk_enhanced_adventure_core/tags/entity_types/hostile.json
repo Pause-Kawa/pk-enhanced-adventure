@@ -14,15 +14,14 @@
         "minecraft:magma_cube",
         "minecraft:phantom",
         "minecraft:piglin_brute",
-        "minecraft:pillager",
-        "minecraft:ravager",
         "minecraft:shulker",
         "minecraft:silverfish",
         "minecraft:slime",
         "minecraft:stray",
         "minecraft:vex",
-        "minecraft:wither_skeleton",
+        "minecraft:warden",
         "minecraft:zoglin",
+        "minecraft:zombie",
         "minecraft:zombie_villager"
     ]
 }

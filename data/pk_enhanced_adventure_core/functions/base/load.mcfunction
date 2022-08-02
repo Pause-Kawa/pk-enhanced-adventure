@@ -27,6 +27,7 @@ scoreboard objectives add pk.enhanced_adventure.memorized.pos.x dummy
 scoreboard objectives add pk.enhanced_adventure.memorized.pos.y dummy
 scoreboard objectives add pk.enhanced_adventure.memorized.pos.z dummy
 scoreboard objectives add pk.enhanced_adventure.memorized.dimension dummy
+scoreboard objectives add pk.enhanced_adventure.health health
 scoreboard objectives add pk.enhanced_adventure.leave_game custom:leave_game
 scoreboard objectives add pk.enhanced_adventure.death_count deathCount
 # Used items
@@ -38,12 +39,16 @@ scoreboard objectives add pk.enhanced_adventure.magnet_hook.id dummy
 scoreboard objectives add pk.enhanced_adventure.magnet_hook.delay dummy
 scoreboard objectives add pk.enhanced_adventure.magnet_hook.tp_delay dummy
 scoreboard objectives add pk.enhanced_adventure.ppoas.delay dummy
+scoreboard objectives add pk.enhanced_adventure.ppoas.hurt_time dummy
 # Custom mechanics
 scoreboard objectives add pk.enhanced_adventure.ancient_altar.interaction.id dummy
 scoreboard objectives add pk.enhanced_adventure.allegiance.id dummy
 scoreboard objectives add pk.enhanced_adventure.allegiance.delay dummy
 scoreboard objectives add pk.enhanced_adventure.robustness.delay dummy
+scoreboard objectives add pk.enhanced_adventure.safeguard_instinct.delay dummy
 # Define constants
+scoreboard players set %pk_const_-1 pk.common.value -1
+scoreboard players set %pk_const_2 pk.common.value 2
 scoreboard players set %pk_const_1000 pk.common.value 1000
 
 # ----------------------------------------
@@ -53,6 +58,8 @@ scoreboard players set %pk_const_1000 pk.common.value 1000
 function pk_enhanced_adventure_core:helpers/iris/setup/load
 # RNG
 function pk_enhanced_adventure_core:helpers/random/load
+# Entity hit matching
+function pk_enhanced_adventure_core:helpers/entity_hit_matching/load
 
 # ----------------------------------------
 # Mechanics
