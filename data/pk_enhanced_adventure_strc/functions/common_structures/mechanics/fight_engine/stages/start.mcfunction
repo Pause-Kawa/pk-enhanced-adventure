@@ -18,7 +18,7 @@ scoreboard players set %pk_reinforcing_max pk.common.value 2147483647
 execute store result score %pk_reinforcing_max pk.common.value run data get storage pk_enhanced_adventure:data Temp.Engine.ReinforcingMax
 scoreboard players operation %pk_reinforcing_total pk.common.value < %pk_reinforcing_max pk.common.value
 # - Add reinforcing entities to storage
-execute if score %pk_reinforcing_total pk.common.value matches 1.. run function pk_enhanced_adventure_strc:common_structures/mechanics/fight_engine/helpers/set_renforcing_recursively
+execute if score %pk_reinforcing_total pk.common.value matches 1.. run function pk_enhanced_adventure_strc:common_structures/mechanics/fight_engine/helpers/set_reinforcing_recursively
 
 # Summon entities
 function pk_enhanced_adventure_strc:common_structures/mechanics/common_engines/summon_entities

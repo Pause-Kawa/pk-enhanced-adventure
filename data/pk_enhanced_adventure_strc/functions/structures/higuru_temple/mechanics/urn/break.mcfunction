@@ -1,5 +1,6 @@
 # Loot
-loot spawn ~ ~0.2 ~ loot pk_enhanced_adventure_strc:chests/higuru_temple/urn
+execute if entity @s[tag=!pk_food] run loot spawn ~ ~0.2 ~ loot pk_enhanced_adventure_strc:chests/higuru_temple/urn
+execute if entity @s[tag=pk_food] run loot spawn ~ ~0.2 ~ loot pk_enhanced_adventure_strc:chests/higuru_temple/urn_food
 # Break the blocks and remove the polished granite drop
 setblock ~ ~ ~ air destroy
 setblock ~ ~1 ~ air destroy

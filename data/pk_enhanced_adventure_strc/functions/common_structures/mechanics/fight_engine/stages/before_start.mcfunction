@@ -8,6 +8,7 @@ tag @s add pk_stage_starting
 # Store the necessary data temporary
 data modify storage pk_enhanced_adventure:data Temp.Engine set value {}
 data modify storage pk_enhanced_adventure:data Temp.Engine set from entity @s data 
+data modify storage pk_enhanced_adventure:data Temp.Engine.Type set value "Fight"
 
 # Retrieve all relative fight triggers and mark them as triggered
 execute store result score %pk_temp pk.enhanced_adventure.trigger.value run data get storage pk_enhanced_adventure:data Temp.Engine.TriggerValue

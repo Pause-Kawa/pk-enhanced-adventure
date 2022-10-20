@@ -14,6 +14,7 @@ execute align xyz run summon marker ~0.5 ~ ~0.5 {Tags:["pk_enhanced_adventure_st
 # Trap
 give @s dispenser{BlockEntityTag:{LootTable:"pk_enhanced_adventure_strc:chests/higuru_temple/dispenser_trap"},BlockStateTag:{facing:"down"}} 1
 # Urn
+give @s command_block{BlockEntityTag:{Command:"function pk_enhanced_adventure_strc:structures/higuru_temple/mechanics/urn/place_food"}} 1
 give @s command_block{BlockEntityTag:{Command:"function pk_enhanced_adventure_strc:structures/higuru_temple/mechanics/urn/place"}} 1
 
 
@@ -26,6 +27,19 @@ execute align xyz run summon marker ~0.5 ~ ~0.5 {Tags:["pk_enhanced_adventure_st
 # - Hard fight
 execute align xyz run summon marker ~0.5 ~ ~0.5 {Tags:["pk_enhanced_adventure_strc_marker","pk_common_marker","pk_fight_engine"],data:{Entities:[{Type:"higuru_skeleton_random"},{Type:"higuru_skeleton_random"},{Type:"cave_spider"}],Reinforcing:[{Type:"higuru_skeleton_random"}],ReinforcingMax:3,SpawnAnimations:[{Particles:"soul_fire_flame"},{Sound:"entity.evoker.cast_spell"}],OnStart:{Events:[{Name:"higuru_temple_statue_lever_mouth_close"}]},OnStop:{Events:[{Name:"higuru_temple_statue_lever_mouth_open"}]},OnReset:{},Resetable:1b,TriggerValue:1}}
 
+
+# Underground 1 : Large room
+execute align xyz run summon marker ~0.5 ~ ~0.5 {Tags:["pk_enhanced_adventure_strc_marker","pk_common_marker","pk_fight_trigger"],data:{TriggerDistance:1,TriggerValue:2}}
+execute align xyz run summon marker ~0.5 ~ ~0.5 {Tags:["pk_enhanced_adventure_strc_marker","pk_common_marker","pk_fight_engine"],data:{Entities:[{Type:"higuru_skeleton_random"}],SpawnAnimations:[{Particles:"soul_fire_flame"},{Sound:"entity.evoker.cast_spell"}],Resetable:1b,TriggerValue:2}}
+execute align xyz run summon marker ~0.5 ~ ~0.5 {Tags:["pk_enhanced_adventure_strc_marker","pk_common_marker","pk_fight_trigger"],data:{TriggerDistance:1,TriggerValue:3}}
+execute align xyz run summon marker ~0.5 ~ ~0.5 {Tags:["pk_enhanced_adventure_strc_marker","pk_common_marker","pk_fight_engine"],data:{Entities:[{Type:"higuru_skeleton_random"}],SpawnAnimations:[{Particles:"soul_fire_flame"},{Sound:"entity.evoker.cast_spell"}],Resetable:1b,TriggerValue:3}}
+
+
+# Underground 1 : Secret room
+execute align xyz run summon marker ~0.5 ~ ~0.5 {Tags:["pk_enhanced_adventure_strc_marker","pk_common_marker","pk_fight_trigger"],data:{TriggerDistance:1,TriggerValue:4}}
+execute align xyz run summon marker ~0.5 ~ ~0.5 {Tags:["pk_enhanced_adventure_strc_marker","pk_common_marker","pk_fight_engine"],data:{Entities:[{Type:"silverfish"},{Type:"silverfish"},{Type:"silverfish"},{Type:"silverfish"}],SpawnAnimations:[{Particles:"poof"},{Sound:"entity.evoker.cast_spell"}],TriggerValue:4}}
+execute align xyz run summon marker ~0.5 ~ ~0.5 {Tags:["pk_enhanced_adventure_strc_marker","pk_common_marker","pk_fight_engine"],data:{Entities:[{Type:"higuru_skeleton_cooker"},{Type:"higuru_skeleton_cooker"}],SpawnAnimations:[{Particles:"soul_fire_flame"},{Sound:"entity.evoker.cast_spell"}],TriggerValue:4}}
+summon marker ~ ~ ~ {Tags:["pk_enhanced_adventure_strc_marker","pk_common_marker","pk_spawner_engine"],data:{TriggerDistance:20,Waves:1,WavesDelay:0,WavesReset:0b,MaxAliveEntities:1,Entities:[{Type:"rabbit"}],Resetable:0b}}
 
 # Ancient Altar Decoration Entities
 # North : -Z / East : +X

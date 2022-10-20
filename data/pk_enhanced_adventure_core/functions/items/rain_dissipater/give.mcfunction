@@ -1,1 +1,1 @@
-give @p tipped_arrow{display:{Name:'{"text":"Rain Dissipater","italic":false}'},HideFlags:33,pkRainDissipater:1b,Enchantments:[{}],CustomPotionEffects:[{Id:29b,Amplifier:4b,Duration:1}],CustomPotionColor:56831,CustomModelData:1611403} 1
+give @p tipped_arrow{display:{Name:'{"text":"Rain Dissipater","italic":false}'},HideFlags:33,pkRainDissipater:1b,Enchantments:[{}],CustomPotionEffects:[{Id:29,Amplifier:4b,Duration:1}],CustomPotionColor:56831,CustomModelData:1611403} 1

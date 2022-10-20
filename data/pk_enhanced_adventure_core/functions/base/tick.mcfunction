@@ -21,7 +21,7 @@ execute as @a[scores={pk.enhanced_adventure.leave_game=1..}] at @s run function 
 execute as @a[scores={pk.enhanced_adventure.death_count=1..}] at @s run function pk_enhanced_adventure_core:events/player/is_dead/trigger
 # Player used carrot on a stick
 execute as @a[scores={pk.enhanced_adventure.used.coas=1..}] at @s run function pk_enhanced_adventure_core:events/player/used_coas/check_hand
-# Player used warped fungus on a stick
+# Player used warped fungus on a stick90
 execute as @a[scores={pk.enhanced_adventure.used.wfoas=1..}] at @s run function pk_enhanced_adventure_core:events/player/used_wfoas/check_hand
 # Player used bow
 execute as @a[scores={pk.enhanced_adventure.used.bow=1..}] at @s run function pk_enhanced_adventure_core:events/player/used_bow/trigger
