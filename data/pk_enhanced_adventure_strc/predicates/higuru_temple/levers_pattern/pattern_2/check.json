@@ -1,0 +1,30 @@
+[
+    {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+            "nbt": "{data:{Pattern:2}}"
+        }
+    },
+    {
+        "condition": "minecraft:alternative",
+        "terms": [
+            {
+                "condition": "minecraft:reference",
+                "name": "pk_enhanced_adventure_strc:higuru_temple/levers_pattern/pattern_2/east"
+            },
+            {
+                "condition": "minecraft:reference",
+                "name": "pk_enhanced_adventure_strc:higuru_temple/levers_pattern/pattern_2/north"
+            },
+            {
+                "condition": "minecraft:reference",
+                "name": "pk_enhanced_adventure_strc:higuru_temple/levers_pattern/pattern_2/west"
+            },
+            {
+                "condition": "minecraft:reference",
+                "name": "pk_enhanced_adventure_strc:higuru_temple/levers_pattern/pattern_2/south"
+            }
+        ]
+    }
+]

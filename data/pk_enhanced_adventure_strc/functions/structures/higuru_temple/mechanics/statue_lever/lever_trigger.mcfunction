@@ -5,5 +5,5 @@ execute positioned ~-40 -64 ~-40 as @e[type=marker,tag=pk_higuru_temple_marker,t
 # Remove lever
 setblock ~ ~-1 ~ soul_soil
 setblock ~ ~ ~ soul_fire
-playsound item.firecharge.use ambient @a ~ ~ ~ 1 1
+playsound item.firecharge.use ambient @a[distance=..50] ~ ~ ~ 1 1
 kill @s
