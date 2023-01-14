@@ -1,0 +1,24 @@
+{
+    "name": "pk_enhanced_adventure_strc:higuru_temple/surface",
+    "fallback": "minecraft:empty",
+    "elements": [
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "location": "pk_enhanced_adventure_strc:higuru_temple/surface/surface_1",
+                "processors": "minecraft:empty"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "location": "pk_enhanced_adventure_strc:higuru_temple/surface/surface_2",
+                "processors": "minecraft:empty"
+            }
+        }
+    ]
+}

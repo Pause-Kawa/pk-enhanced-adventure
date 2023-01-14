@@ -1,0 +1,42 @@
+{
+    "name": "pk_enhanced_adventure_strc:higuru_temple/pregen/corner",
+    "fallback": "minecraft:empty",
+    "elements": [
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "location": "pk_enhanced_adventure_strc:higuru_temple/pregen/corner_1",
+                "processors": "minecraft:empty"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "location": "pk_enhanced_adventure_strc:higuru_temple/pregen/corner_2",
+                "processors": "minecraft:empty"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "location": "pk_enhanced_adventure_strc:higuru_temple/pregen/corner_3",
+                "processors": "minecraft:empty"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "location": "pk_enhanced_adventure_strc:higuru_temple/pregen/corner_4",
+                "processors": "minecraft:empty"
+            }
+        }
+    ]
+}

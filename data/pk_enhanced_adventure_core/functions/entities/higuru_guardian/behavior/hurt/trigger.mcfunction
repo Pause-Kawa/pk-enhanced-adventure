@@ -1,0 +1,2 @@
+execute unless entity @s[tag=pk_in_interphase] unless entity @s[scores={pk.enhanced_adventure.boss.phase=3}] run function pk_enhanced_adventure_core:entities/higuru_guardian/behavior/hurt/try_to_teleport_to_corner
+function pk_enhanced_adventure_core:entities/higuru_guardian/sounds/hurt

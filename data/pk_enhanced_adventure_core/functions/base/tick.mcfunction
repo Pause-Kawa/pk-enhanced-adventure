@@ -42,6 +42,8 @@ execute as @e[type=item,tag=!pk_enhanced_adventure_checked] at @s run function p
 execute as @e[type=item,tag=pk_enhanced_adventure_item_entity_to_track] at @s run function pk_enhanced_adventure_core:entities/item/tick
 # Higuru Skeleton
 execute as @e[type=skeleton,tag=pk_higuru_skeleton] at @s run function pk_enhanced_adventure_core:entities/higuru_skeleton/behavior/tick
+execute as @e[type=wither_skeleton,tag=pk_higuru_guardian] at @s run function pk_enhanced_adventure_core:entities/higuru_guardian/behavior/tick
+execute as @e[type=wither_skeleton,tag=pk_higuru_guardian_clone] at @s run function pk_enhanced_adventure_core:entities/higuru_guardian_clone/behavior/tick
 # Marker
 execute as @e[type=marker,tag=pk_enhanced_adventure_core_marker] at @s run function pk_enhanced_adventure_core:entities/marker/dispatcher
 # Villager

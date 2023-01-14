@@ -17,3 +17,7 @@ execute if entity @s[tag=!pk_magnet_hook_no_climb,x_rotation=23..51] anchored ey
 
 # Animations
 playsound minecraft:item.armor.equip_chain ambient @a ~ ~ ~ 1 1.15
+
+
+
+

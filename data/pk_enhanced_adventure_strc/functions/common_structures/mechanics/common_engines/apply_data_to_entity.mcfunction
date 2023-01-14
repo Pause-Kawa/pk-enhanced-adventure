@@ -15,3 +15,4 @@ data modify entity @s HandDropChances set from storage pk_enhanced_adventure:dat
 data modify entity @s HandItems set from storage pk_enhanced_adventure:data Temp.Entity.HandItems
 data modify entity @s PersistenceRequired set from storage pk_enhanced_adventure:data Temp.Entity.PersistenceRequired
 data modify entity @s variant set from storage pk_enhanced_adventure:data Temp.Entity.variant
+data modify entity @s Tags append from storage pk_enhanced_adventure:data Temp.Entity.Tags[]

@@ -9,7 +9,7 @@ execute if data storage pk_enhanced_adventure:data Temp.Engine.OnStop run functi
 
 # Remove relative fight triggers
 execute store result score %pk_temp pk.enhanced_adventure.trigger.value run data get storage pk_enhanced_adventure:data Temp.Engine.TriggerValue
-execute positioned ~-40 -64 ~-40 as @e[type=marker,tag=pk_fight_trigger,dx=80,dy=512,dz=80] if score @s pk.enhanced_adventure.trigger.value = %pk_temp pk.enhanced_adventure.trigger.value run kill @s
+execute positioned ~-40 -64 ~-40 as @e[type=marker,tag=pk_fight_trigger,dx=80,dy=512,dz=80,predicate=pk_enhanced_adventure_strc:id_match/trigger_value] run kill @s
 
 # Remove the current marker
 kill @s

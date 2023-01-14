@@ -27,9 +27,19 @@ scoreboard objectives add pk.enhanced_adventure.memorized.pos.x dummy
 scoreboard objectives add pk.enhanced_adventure.memorized.pos.y dummy
 scoreboard objectives add pk.enhanced_adventure.memorized.pos.z dummy
 scoreboard objectives add pk.enhanced_adventure.memorized.dimension dummy
-scoreboard objectives add pk.enhanced_adventure.health health
 scoreboard objectives add pk.enhanced_adventure.leave_game custom:leave_game
 scoreboard objectives add pk.enhanced_adventure.death_count deathCount
+scoreboard objectives add pk.enhanced_adventure.health health
+# Scores used for custom boss
+scoreboard objectives add pk.enhanced_adventure.boss.health dummy
+scoreboard objectives add pk.enhanced_adventure.boss.phase dummy
+scoreboard objectives add pk.enhanced_adventure.boss.event_time dummy
+scoreboard objectives add pk.enhanced_adventure.boss.reinforcing.delay dummy
+scoreboard objectives add pk.enhanced_adventure.boss.shield_level dummy
+scoreboard objectives add pk.enhanced_adventure.boss.weapon_switch.delay dummy
+scoreboard objectives add pk.enhanced_adventure.boss.teleport.delay dummy
+scoreboard objectives add pk.enhanced_adventure.boss.reinforcement.next_delay dummy
+scoreboard objectives add pk.enhanced_adventure.boss.reinforcement.prepare_delay dummy
 # Used items
 scoreboard objectives add pk.enhanced_adventure.used.coas used:carrot_on_a_stick
 scoreboard objectives add pk.enhanced_adventure.used.wfoas used:warped_fungus_on_a_stick

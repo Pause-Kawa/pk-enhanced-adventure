@@ -1,0 +1,14 @@
+{
+    "placement": {
+        "type": "minecraft:random_spread",
+        "salt": 1410895604,
+        "separation": 16,
+        "spacing": 32
+    },
+    "structures": [
+        {
+            "structure": "pk_enhanced_adventure_strc:higuru_temple",
+            "weight": 1
+        }
+    ]
+}

@@ -12,7 +12,7 @@ data modify storage pk_enhanced_adventure:data Temp.Engine.Type set value "Fight
 
 # Retrieve all relative fight triggers and mark them as triggered
 execute store result score %pk_temp pk.enhanced_adventure.trigger.value run data get storage pk_enhanced_adventure:data Temp.Engine.TriggerValue
-execute positioned ~-40 -64 ~-40 as @e[type=marker,tag=pk_fight_trigger,dx=80,dy=512,dz=80] if score @s pk.enhanced_adventure.trigger.value = %pk_temp pk.enhanced_adventure.trigger.value run tag @s add pk_triggered
+execute positioned ~-40 -64 ~-40 as @e[type=marker,tag=pk_fight_trigger,dx=80,dy=512,dz=80,predicate=pk_enhanced_adventure_strc:id_match/trigger_value] run tag @s add pk_triggered
 
 # Check if it exists a hook event to run before starting
 execute if data storage pk_enhanced_adventure:data Temp.Engine.BeforeStart run function pk_enhanced_adventure_strc:common_structures/mechanics/fight_engine/hooks/before_start

@@ -3,7 +3,7 @@ execute if data storage pk_enhanced_adventure:data Temp.Entity{Type:"higuru_skel
 execute if data storage pk_enhanced_adventure:data Temp.Entity{Type:"higuru_skeleton_axeman"} run function pk_enhanced_adventure_core:entities/higuru_skeleton/summon/axeman
 execute if data storage pk_enhanced_adventure:data Temp.Entity{Type:"higuru_skeleton_random"} run function pk_enhanced_adventure_core:entities/higuru_skeleton/summon/random
 execute if data storage pk_enhanced_adventure:data Temp.Entity{Type:"higuru_skeleton_cooker"} run function pk_enhanced_adventure_core:entities/higuru_skeleton/summon/cooker
-execute if data storage pk_enhanced_adventure:data Temp.Entity{Type:"higuru_skeleton_guardian"} run function pk_enhanced_adventure_core:entities/higuru_skeleton_guardian/summon/single
+execute if data storage pk_enhanced_adventure:data Temp.Entity{Type:"higuru_guardian"} run function pk_enhanced_adventure_core:entities/higuru_guardian/summon
 
 # Vanilla mobs
 execute if data storage pk_enhanced_adventure:data Temp.Entity{Type:"armor_stand"} run summon armor_stand

@@ -1,0 +1,2 @@
+# Init bossbar in area
+execute positioned ~-40 -64 ~-40 at @e[type=marker,tag=pk_higuru_guardian_bossbar_spot,limit=1,dx=80,dy=512,dz=80] run summon area_effect_cloud ~ ~ ~ {Age:-2147483648,Duration:-1,WaitTime:-2147483648,Tags:["pk_higuru_guardian_bossbar"],Passengers:[{id:"minecraft:wither",DeathLootTable:"minecraft:empty",Silent:1b,Invulnerable:1b,Tags:["pk_higuru_guardian_bossbar"],Health:300f,Attributes:[{Name:"generic.max_health",Base:300}],CustomName:'{"text":"Higuru Guardian"}'}]}

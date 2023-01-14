@@ -1,0 +1,8 @@
+# Summon Higuru Skeleton Guardian
+summon wither_skeleton ~ ~ ~ {Silent:1b,Team:"PKHiddenName",Tags:["pk_enhanced_adventure_mob","pk_higuru_guardian","higuru_guardian_fight_relative","pk_hidden_name","pk_higuru_guardian_current","pk_use_axe"],DeathLootTable:"pk_enhanced_adventure_core:entities/higuru_skeleton",Health:300f,CustomName:'{"text":"Higuru Guardian","italic":false}',HandItems:[{id:"minecraft:golden_axe",tag:{Enchantments:[{id:"minecraft:sharpness",lvl:2s},{id:"minecraft:unbreaking",lvl:2s}]},Count:1b},{id:"minecraft:shield",Count:1b,tag:{BlockEntityTag:{Base:12,Patterns:[{Color:9,Pattern:"ss"},{Color:14,Pattern:"cbo"},{Color:4,Pattern:"bts"},{Color:4,Pattern:"tts"},{Color:4,Pattern:"flo"}]},Enchantments:[{id:"minecraft:unbreaking",lvl:3s}],display:{Name:'{"text":"Higuru Shield","italic":false}'}}}],HandDropChances:[0F,0F],ArmorItems:[{},{},{id:"minecraft:netherite_chestplate",Count:1b},{id:"minecraft:brewing_stand",Count:1b,tag:{HideFlags:32,Enchantments:[{}]}}],ArmorDropChances:[0F,0F,0F,0F],Attributes:[{Name:"minecraft:generic.max_health",Base:300},{Name:"minecraft:generic.attack_damage",Base:5},{Name:"minecraft:generic.follow_range",Base:50}]}
+
+# Define the relative scores
+scoreboard players set @e[type=wither_skeleton,tag=pk_higuru_guardian_current,distance=..0.1] pk.enhanced_adventure.boss.phase 1
+scoreboard players set @e[type=wither_skeleton,tag=pk_higuru_guardian_current,distance=..0.1] pk.enhanced_adventure.boss.weapon_switch.delay 0
+scoreboard players set @e[type=wither_skeleton,tag=pk_higuru_guardian_current,distance=..0.1] pk.enhanced_adventure.boss.reinforcement.next_delay 400
+tag @e[type=wither_skeleton,tag=pk_higuru_guardian_current,distance=..0.1] remove pk_higuru_guardian_current
