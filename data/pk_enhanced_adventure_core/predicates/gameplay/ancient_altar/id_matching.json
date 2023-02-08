@@ -1,0 +1,26 @@
+{
+    "condition": "minecraft:value_check",
+    "value": {
+        "type": "minecraft:score",
+        "target": "this",
+        "score": "pk.enhanced_adventure.ancient_altar.interaction.id"
+    },
+    "range": {
+        "min": {
+            "type": "minecraft:score",
+            "target": {
+                "type": "minecraft:fixed",
+                "name": "%pk_temp"
+            },
+            "score": "pk.common.value"
+        },
+        "max": {
+            "type": "minecraft:score",
+            "target": {
+                "type": "minecraft:fixed",
+                "name": "%pk_temp"
+            },
+            "score": "pk.common.value"
+        }
+    }
+}

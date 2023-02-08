@@ -1,6 +1,6 @@
 # Search the relative latch point
 scoreboard players operation %pk_temp pk.common.value = @s pk.enhanced_adventure.magnet_hook.id
-execute as @e[type=marker,tag=pk_magnet_hook_latch_point,tag=pk_reached,distance=..5] if score %pk_temp pk.common.value = @s pk.enhanced_adventure.magnet_hook.id run tag @s add pk_current_magnet_hook_latch_point
+tag @e[type=marker,tag=pk_magnet_hook_latch_point,tag=pk_reached,distance=..5,predicate=pk_enhanced_adventure_core:gameplay/magnet_hook/id_matching] add pk_current_magnet_hook_latch_point
 
 # Force the player to land without climbing
 tag @s add pk_magnet_hook_no_climb

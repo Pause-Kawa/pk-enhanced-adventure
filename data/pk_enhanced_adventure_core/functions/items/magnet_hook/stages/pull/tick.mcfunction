@@ -1,6 +1,6 @@
 # Search the relative latch point
 scoreboard players operation %pk_temp pk.common.value = @s pk.enhanced_adventure.magnet_hook.id
-execute as @e[type=marker,tag=pk_magnet_hook_latch_point,tag=!pk_reached,distance=..32] if score %pk_temp pk.common.value = @s pk.enhanced_adventure.magnet_hook.id run tag @s add pk_current_magnet_hook_latch_point
+tag @e[type=marker,tag=pk_magnet_hook_latch_point,tag=!pk_reached,distance=..32,predicate=pk_enhanced_adventure_core:gameplay/magnet_hook/id_matching] add pk_current_magnet_hook_latch_point
 
 # Teleport player toward its relative latch point
 execute facing entity @e[type=marker,tag=pk_current_magnet_hook_latch_point,limit=1,distance=..32] feet run tp @s ^ ^ ^1

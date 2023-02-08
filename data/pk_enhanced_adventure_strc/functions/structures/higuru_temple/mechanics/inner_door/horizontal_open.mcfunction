@@ -6,3 +6,5 @@ playsound minecraft:block.deepslate.break ambient @a ~ ~ ~ 10 1
 playsound minecraft:block.deepslate.break ambient @a ~ ~ ~ 10 1
 playsound minecraft:block.deepslate.break ambient @a ~ ~ ~ 10 1
 kill @s
+
+say Horziontal Inner Door opened

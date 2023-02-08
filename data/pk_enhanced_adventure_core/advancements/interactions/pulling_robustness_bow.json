@@ -4,12 +4,13 @@
             "trigger": "minecraft:using_item",
             "conditions": {
                 "item": {
-                    "items": [
-                        "minecraft:bow"
-                    ],
+                    "items": ["minecraft:bow"],
                     "nbt": "{pkBewitchments:{Robustness:1b}}"
                 }
             }
         }
+    },
+    "rewards": {
+        "function": "pk_enhanced_adventure_core:mechanics/bewitchments/robustness/player/on_pulling_bow"
     }
 }

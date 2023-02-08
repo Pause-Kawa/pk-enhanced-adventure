@@ -1,3 +1,6 @@
+# Higuru Temple Core Marker
+execute align xyz run summon marker ~0.5 ~ ~0.5 {Tags:["pk_enhanced_adventure_strc_marker","pk_higuru_temple_marker","pk_higuru_temple_core"]}
+
 # Higuru Temple Main Entrance Marker
 execute align xyz run summon marker ~0.5 ~ ~0.5 {Tags:["pk_enhanced_adventure_strc_marker","pk_higuru_temple_marker","pk_main_entrance"]}
 
@@ -6,9 +9,11 @@ give @s dispenser{BlockEntityTag:{LootTable:"pk_enhanced_adventure_strc:chests/h
 give @s chest{BlockEntityTag:{LootTable:"pk_enhanced_adventure_strc:chests/higuru_temple/rare_treasure"}}
 give @s chest{BlockEntityTag:{LootTable:"pk_enhanced_adventure_strc:chests/higuru_temple/ancient_tablets_treasure"}}
 give @s trapped_chest{BlockEntityTag:{LootTable:"pk_enhanced_adventure_strc:chests/higuru_temple/rare_treasure"}}
+give @s chest{BlockEntityTag:{LootTable:"pk_enhanced_adventure_strc:chests/higuru_temple/archery"}}
 
 # Inner door
-execute align xyz run summon marker ~0.5 ~ ~0.5 {Tags:["pk_enhanced_adventure_strc_marker","pk_higuru_temple_marker","pk_inner_door"],data:{TriggerValue:1}}
+execute align xyz run summon marker ~0.5 ~ ~0.5 {Tags:["pk_enhanced_adventure_strc_marker","pk_higuru_temple_marker","pk_inner_door","pk_vertical_inner_door"],data:{TriggerValue:2}}
+execute align xyz run summon marker ~0.5 ~ ~0.5 {Tags:["pk_enhanced_adventure_strc_marker","pk_higuru_temple_marker","pk_inner_door","pk_horizontal_inner_door"],data:{TriggerValue:1}}
 # Statue lever
 execute align xyz run summon marker ~0.5 ~ ~0.5 {Tags:["pk_enhanced_adventure_strc_marker","pk_higuru_temple_marker","pk_lever"],data:{TriggerValue:1}}
 # Trap
@@ -36,11 +41,6 @@ execute align xyz run summon marker ~0.5 ~ ~0.5 {Tags:["pk_enhanced_adventure_st
 execute align xyz run summon marker ~0.5 ~ ~0.5 {Tags:["pk_enhanced_adventure_strc_marker","pk_common_marker","pk_fight_engine"],data:{Entities:[{Type:"higuru_skeleton_random"}],SpawnAnimations:[{Particles:"soul_fire_flame"},{Sound:"entity.evoker.cast_spell"}],Resetable:1b,TriggerValue:2}}
 execute align xyz run summon marker ~0.5 ~ ~0.5 {Tags:["pk_enhanced_adventure_strc_marker","pk_common_marker","pk_fight_trigger"],data:{TriggerDistance:1,TriggerValue:3}}
 execute align xyz run summon marker ~0.5 ~ ~0.5 {Tags:["pk_enhanced_adventure_strc_marker","pk_common_marker","pk_fight_engine"],data:{Entities:[{Type:"higuru_skeleton_random"}],SpawnAnimations:[{Particles:"soul_fire_flame"},{Sound:"entity.evoker.cast_spell"}],Resetable:1b,TriggerValue:3}}
-# Targets room
-execute align xyz run summon marker ~0.5 ~ ~0.5 {Tags:["pk_enhanced_adventure_strc_marker","pk_common_marker","pk_fight_engine"],data:{OnStop:{Events:[{Name:"higuru_temple_statue_lever_mouth_open"}]},TriggerValue:0,NeededActions:2}}
-# Levers pattern
-execute align xyz run summon marker ~0.5 ~ ~0.5 {Tags:["pk_enhanced_adventure_strc_marker","pk_higuru_temple_marker","pk_levers_pattern_event"],data:{OnStop:{Events:[{Name:"higuru_temple_inner_door_open"}]},TriggerValue:0}}
-
 
 # Underground 1 : Secret room
 execute align xyz run summon marker ~0.5 ~ ~0.5 {Tags:["pk_enhanced_adventure_strc_marker","pk_common_marker","pk_fight_trigger"],data:{TriggerDistance:1,TriggerValue:4}}
@@ -55,12 +55,6 @@ execute align xyz run summon marker ~0.5 ~ ~0.5 {Tags:["pk_enhanced_adventure_st
 
 
 # Underground 2 : Large room
-# - Statue targets
-execute align xyz run summon marker ~0.5 ~ ~0.5 {Tags:["pk_enhanced_adventure_strc_marker","pk_higuru_temple_marker","pk_target_trigger"],data:{TriggerValue:0}}
-execute align xyz run summon marker ~0.5 ~ ~0.5 {Tags:["pk_enhanced_adventure_strc_marker","pk_higuru_temple_marker","pk_target_event"],data:{OnStop:{Events:[{Name:"higuru_temple_inner_door_open"}]},TriggerValue:0,NeededActions:2}}
-# - Levers pattern
-execute align xyz run summon marker ~0.5 ~ ~0.5 {Tags:["pk_enhanced_adventure_strc_marker","pk_higuru_temple_marker","pk_levers_pattern_trigger"],data:{Pattern:1,TriggerValue:0}}
-execute align xyz run summon marker ~0.5 ~ ~0.5 {Tags:["pk_enhanced_adventure_strc_marker","pk_higuru_temple_marker","pk_levers_pattern_event"],data:{OnStop:{Events:[{Name:"higuru_temple_inner_door_open"}]},TriggerValue:0}}
 
 
 # Underground 2 : First room
@@ -87,6 +81,8 @@ execute align xyz run summon marker ~0.5 ~ ~0.5 {Tags:["pk_enhanced_adventure_st
 execute align xyz run summon marker ~0.5 ~-0.5 ~0.5 {Tags:["pk_enhanced_adventure_strc_marker","pk_higuru_guardian_bossbar_spot"]}
 # - Corner
 execute align xyz run summon marker ~0.5 ~-0.5 ~0.5 {Tags:["pk_enhanced_adventure_strc_marker","pk_boss_room_corner"]}
+# - Stairs and treasure room
+execute align xyz run summon marker ~0.5 ~ ~0.5 {Tags:["pk_enhanced_adventure_strc_marker","pk_higuru_temple_marker","pk_inner_door","vertical_door"],data:{TriggerValue:7}}
 
 # Ancient Altar Decoration Entities
 # North : -Z / East : +X
@@ -94,7 +90,3 @@ execute align xyz run summon falling_block ~0.500 ~0.999 ~0.501 {Tags:["pk_enhan
 execute align xyz run summon falling_block ~0.500 ~0.999 ~0.499 {Tags:["pk_enhanced_adventure_ancient_altar_decoration","pk_enhanced_adventure_falling_block"],BlockState:{Name:"minecraft:polished_basalt",Properties:{"axis":"z"}},NoGravity:1b,Time:-2147483648,Invulnerable:1b}
 execute align xyz run summon falling_block ~0.499 ~1.001 ~0.500 {Tags:["pk_enhanced_adventure_ancient_altar_decoration","pk_enhanced_adventure_falling_block"],BlockState:{Name:"minecraft:polished_basalt",Properties:{"axis":"x"}},NoGravity:1b,Time:-2147483648,Invulnerable:1b}
 execute align xyz run summon falling_block ~0.501 ~1.001 ~0.500 {Tags:["pk_enhanced_adventure_ancient_altar_decoration","pk_enhanced_adventure_falling_block"],BlockState:{Name:"minecraft:polished_basalt",Properties:{"axis":"x"}},NoGravity:1b,Time:-2147483648,Invulnerable:1b}
-
-
-execute align xyz run summon falling_block ~0.501 ~-0.501 ~0.501 {Tags:["mcbp_decoration"],BlockState:{Name:"minecraft:barrel",Properties:{"facing":"north"}},NoGravity:1b,Time:-2147483648,Invulnerable:1b}
-execute align xyz run summon falling_block ~0.499 ~-0.499 ~0.499 {Tags:["mcbp_decoration"],BlockState:{Name:"minecraft:barrel",Properties:{"facing":"north"}},NoGravity:1b,Time:-2147483648,Invulnerable:1b}

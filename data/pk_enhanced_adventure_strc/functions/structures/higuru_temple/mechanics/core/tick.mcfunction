@@ -1,0 +1,2 @@
+# Toggle gamemode of players being in the protected area
+execute positioned ~-40 -64 ~-40 as @a[tag=!pk_get_higuru_temple_curse,gamemode=survival,dx=80,dy=512,dz=80] at @s run function pk_enhanced_adventure_strc:structures/higuru_temple/mechanics/core/player_apply_curse

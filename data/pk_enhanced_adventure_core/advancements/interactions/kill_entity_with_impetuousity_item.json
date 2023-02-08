@@ -1,0 +1,25 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "entity": "this",
+                        "condition": "minecraft:entity_properties",
+                        "predicate": {
+                            "equipment": {
+                                "mainhand": {
+                                    "nbt": "{pkBewitchments:{Impetuousity:1b}}"
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "pk_enhanced_adventure_core:mechanics/bewitchments/impetuousity/on_player_kill"
+    }
+}

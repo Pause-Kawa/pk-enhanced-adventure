@@ -1,6 +1,6 @@
 # Retrieve the current user
 scoreboard players operation %pk_temp pk.common.value = @s pk.enhanced_adventure.ancient_altar.interaction.id
-execute as @a[tag=pk_using_ancient_altar,distance=..16] if score %pk_temp pk.common.value = @s pk.enhanced_adventure.ancient_altar.interaction.id run tag @s add pk_current_player
+tag @a[tag=pk_using_ancient_altar,distance=..16,predicate=pk_enhanced_adventure_core:gameplay/ancient_altar/id_matching] add pk_current_player
 
 # Define Previous and Current Storage
 data modify storage pk_enhanced_adventure:data AncientAltar.Gui.Previous set from entity @s data.Gui.Previous

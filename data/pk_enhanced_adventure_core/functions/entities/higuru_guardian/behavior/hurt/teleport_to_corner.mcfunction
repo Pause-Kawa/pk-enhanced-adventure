@@ -1,5 +1,5 @@
 # Teleport to random corner
-tag @e[type=marker,tag=pk_boss_room_corner,limit=1,sort=random,distance=..50] add pk_chosen_corner
+tag @e[type=marker,tag=pk_higuru_temple_marker,tag=pk_boss_room_corner,limit=1,sort=random,distance=..50] add pk_chosen_corner
 tp @s @e[type=marker,tag=pk_chosen_corner,distance=..50,limit=1]
 tag @e[type=marker,tag=pk_chosen_corner,distance=..50] remove pk_chosen_corner
 

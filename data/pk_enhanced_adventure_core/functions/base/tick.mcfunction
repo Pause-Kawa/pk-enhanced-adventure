@@ -21,7 +21,7 @@ execute as @a[scores={pk.enhanced_adventure.leave_game=1..}] at @s run function 
 execute as @a[scores={pk.enhanced_adventure.death_count=1..}] at @s run function pk_enhanced_adventure_core:events/player/is_dead/trigger
 # Player used carrot on a stick
 execute as @a[scores={pk.enhanced_adventure.used.coas=1..}] at @s run function pk_enhanced_adventure_core:events/player/used_coas/check_hand
-# Player used warped fungus on a stick90
+# Player used warped fungus on a stick
 execute as @a[scores={pk.enhanced_adventure.used.wfoas=1..}] at @s run function pk_enhanced_adventure_core:events/player/used_wfoas/check_hand
 # Player used bow
 execute as @a[scores={pk.enhanced_adventure.used.bow=1..}] at @s run function pk_enhanced_adventure_core:events/player/used_bow/trigger
@@ -82,3 +82,5 @@ function pk_enhanced_adventure_core:mechanics/bewitchments/souls_magnetisation/t
 function pk_enhanced_adventure_core:mechanics/bewitchments/wild_cushioning/tick
 # Safeguard Instinct
 execute as @a[predicate=pk_enhanced_adventure_core:wear/safeguard_instinct_item] at @s run function pk_enhanced_adventure_core:mechanics/bewitchments/safeguard_instinct/tick
+# Impetuousity
+execute as @a[tag=pk_has_impetuousity_boost] at @s run function pk_enhanced_adventure_core:mechanics/bewitchments/impetuousity/tick

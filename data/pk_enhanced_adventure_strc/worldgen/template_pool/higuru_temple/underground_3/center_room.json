@@ -1,0 +1,15 @@
+{
+    "name": "pk_enhanced_adventure_strc:higuru_temple/underground_3/center_room",
+    "fallback": "minecraft:empty",
+    "elements": [
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "location": "pk_enhanced_adventure_strc:higuru_temple/underground_3/center_room_1",
+                "processors": "minecraft:empty"
+            }
+        }
+    ]
+}

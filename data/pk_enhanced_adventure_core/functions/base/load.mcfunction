@@ -56,10 +56,23 @@ scoreboard objectives add pk.enhanced_adventure.allegiance.id dummy
 scoreboard objectives add pk.enhanced_adventure.allegiance.delay dummy
 scoreboard objectives add pk.enhanced_adventure.robustness.delay dummy
 scoreboard objectives add pk.enhanced_adventure.safeguard_instinct.delay dummy
+scoreboard objectives add pk.enhanced_adventure.impetuousity.level dummy
+scoreboard objectives add pk.enhanced_adventure.impetuousity.timer dummy
+scoreboard objectives add pk.enhanced_adventure.impetuousity.particle_timer dummy
 # Define constants
 scoreboard players set %pk_const_-1 pk.common.value -1
 scoreboard players set %pk_const_2 pk.common.value 2
 scoreboard players set %pk_const_1000 pk.common.value 1000
+
+# ----------------------------------------
+# Bossbars
+# ----------------------------------------
+bossbar add higuru_guardian_1 "Higuru Guardian"
+bossbar add higuru_guardian_2 "Higuru Guardian"
+bossbar add higuru_guardian_3 "Higuru Guardian"
+bossbar set higuru_guardian_1 color purple
+bossbar set higuru_guardian_2 color purple
+bossbar set higuru_guardian_3 color purple
 
 # ----------------------------------------
 # Helpers
@@ -68,8 +81,6 @@ scoreboard players set %pk_const_1000 pk.common.value 1000
 function pk_enhanced_adventure_core:helpers/iris/setup/load
 # RNG
 function pk_enhanced_adventure_core:helpers/random/load
-# Entity hit matching
-function pk_enhanced_adventure_core:helpers/entity_hit_matching/load
 
 # ----------------------------------------
 # Mechanics

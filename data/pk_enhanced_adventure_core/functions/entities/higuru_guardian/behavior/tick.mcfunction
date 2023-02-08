@@ -10,8 +10,10 @@ execute unless entity @s[tag=pk_in_interphase] unless entity @s[scores={pk.enhan
 execute anchored eyes positioned ^ ^ ^ as @e[type=arrow,distance=..0.5] run data modify entity @s Fire set value -20
 # Reinforcement
 execute if entity @s[tag=!pk_in_interphase] run function pk_enhanced_adventure_core:entities/higuru_guardian/behavior/reinforcement/tick
-# Update bossbar
-function pk_enhanced_adventure_core:entities/higuru_guardian/helpers/bossbar_update
+# Update bossbar visibility for players around
+execute if entity @s[tag=pk_bossbar_1] run function pk_enhanced_adventure_core:entities/higuru_guardian/bossbar/1/update_players
+execute if entity @s[tag=pk_bossbar_2] run function pk_enhanced_adventure_core:entities/higuru_guardian/bossbar/2/update_players
+execute if entity @s[tag=pk_bossbar_3] run function pk_enhanced_adventure_core:entities/higuru_guardian/bossbar/3/update_players
 # Hurt
 execute if data storage pk_enhanced_adventure:data Temp.Entity{HurtTime:10s} run function pk_enhanced_adventure_core:entities/higuru_guardian/behavior/hurt/trigger
 

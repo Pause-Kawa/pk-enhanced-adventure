@@ -1,0 +1,2 @@
+scoreboard players remove @s pk.enhanced_adventure.delay 1
+execute if entity @s[scores={pk.enhanced_adventure.delay=0}] run function pk_enhanced_adventure_strc:structures/higuru_temple/mechanics/main_entrance/open

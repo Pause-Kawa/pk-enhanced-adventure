@@ -1,1 +1,1 @@
-give @s name_tag{display:{Name:'{"text":"Ancient Tablet","italic":false}',Lore:['{"text":"Snatch","color":"yellow","italic":false}']},pkAncientTablet:1b,pkSnatch:1b,Enchantments:[{}],CustomModelData:1611405} 1
+give @s name_tag{display:{Name:'{"text":"Ancient Tablet","italic":false}',Lore:['{"text":"Snatch","color":"yellow","italic":false}']},pkAncientTablet:1b,pkSnatch:1b,Enchantments:[{}],CustomModelData:1611404} 1
