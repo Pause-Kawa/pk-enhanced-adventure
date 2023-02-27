@@ -22,6 +22,7 @@ scoreboard objectives add pk.enhanced_adventure.delay dummy
 scoreboard objectives add pk.enhanced_adventure.sound_delay dummy
 scoreboard objectives add pk.enhanced_adventure.counter dummy
 scoreboard objectives add pk.enhanced_adventure.level dummy
+scoreboard objectives add pk.enhanced_adventure.weapon_switch.delay dummy
 # Scores used for players
 scoreboard objectives add pk.enhanced_adventure.memorized.pos.x dummy
 scoreboard objectives add pk.enhanced_adventure.memorized.pos.y dummy
@@ -36,7 +37,6 @@ scoreboard objectives add pk.enhanced_adventure.boss.phase dummy
 scoreboard objectives add pk.enhanced_adventure.boss.event_time dummy
 scoreboard objectives add pk.enhanced_adventure.boss.reinforcing.delay dummy
 scoreboard objectives add pk.enhanced_adventure.boss.shield_level dummy
-scoreboard objectives add pk.enhanced_adventure.boss.weapon_switch.delay dummy
 scoreboard objectives add pk.enhanced_adventure.boss.teleport.delay dummy
 scoreboard objectives add pk.enhanced_adventure.boss.reinforcement.next_delay dummy
 scoreboard objectives add pk.enhanced_adventure.boss.reinforcement.prepare_delay dummy
@@ -62,7 +62,9 @@ scoreboard objectives add pk.enhanced_adventure.impetuousity.particle_timer dumm
 # Define constants
 scoreboard players set %pk_const_-1 pk.common.value -1
 scoreboard players set %pk_const_2 pk.common.value 2
+scoreboard players set %pk_const_100 pk.common.value 100
 scoreboard players set %pk_const_1000 pk.common.value 1000
+scoreboard players set %pk_const_10000 pk.common.value 10000
 
 # ----------------------------------------
 # Bossbars

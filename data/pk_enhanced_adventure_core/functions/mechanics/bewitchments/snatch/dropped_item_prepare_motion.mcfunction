@@ -19,7 +19,7 @@ scoreboard players operation %pk_target_x pk.common.value -= %pk_entity_x pk.com
 scoreboard players operation %pk_target_y pk.common.value -= %pk_entity_y pk.common.value
 scoreboard players operation %pk_target_z pk.common.value -= %pk_entity_z pk.common.value
 
-# Applying motion, excluding vertical one 
+# Applying motion
 data modify storage pk_enhanced_adventure:data Temp.Entity.Motion set value [0d,0d,0d]
 execute store result storage pk_enhanced_adventure:data Temp.Entity.Motion[0] double 0.0002 run scoreboard players get %pk_target_x pk.common.value
 execute store result storage pk_enhanced_adventure:data Temp.Entity.Motion[1] double 0.0002 run scoreboard players get %pk_target_y pk.common.value
@@ -30,4 +30,4 @@ data modify entity @s Motion set from storage pk_enhanced_adventure:data Temp.En
 tag @s remove pk_current_item
 
 # Remove marker
-kill @e[tag=pk_direction]
+kill @e[type=marker,tag=pk_direction,distance=..10]

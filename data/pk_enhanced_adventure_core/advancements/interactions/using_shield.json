@@ -1,0 +1,15 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:using_item",
+            "conditions": {
+                "item": {
+                    "items": ["minecraft:shield"]
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "pk_enhanced_adventure_core:events/player/using_shield/trigger"
+    }
+}

@@ -1,0 +1,1 @@
+give @s firework_rocket{display:{Name:'{"text":"Storm Dissipater","italic":false}'},HideFlags:33,pkStormDissipater:1b,Enchantments:[{}],CustomModelData:1611403} 1

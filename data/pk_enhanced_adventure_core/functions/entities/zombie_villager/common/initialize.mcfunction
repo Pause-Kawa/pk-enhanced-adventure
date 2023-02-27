@@ -8,8 +8,8 @@ execute if data storage pk_enhanced_adventure:data Temp.Entity{VillagerData:{pro
 execute unless score %pk_has_custom_profession pk.common.value matches 1 if data storage pk_enhanced_adventure:data Temp.Entity{VillagerData:{profession:"minecraft:cleric",type:"minecraft:swamp"},Offers:{Recipes:[{buy:{id:"minecraft:blaze_powder",Count:10b}}]}} run function pk_enhanced_adventure_core:entities/zombie_villager/alchemist/found
 
 # - Check for Steam Worker
-execute unless score %pk_has_custom_profession pk.common.value matches 1 if data storage pk_enhanced_adventure:data Temp.Entity{VillagerData:{profession:"minecraft:toolsmith",type:"minecraft:savanna"},Offers:{Recipes:[{buy:{id:"minecraft:redstone",Count:30b}}]}} run function pk_enhanced_adventure_core:entities/zombie_villager/steam_worker/found
-execute unless score %pk_has_custom_profession pk.common.value matches 1 if data storage pk_enhanced_adventure:data Temp.Entity{VillagerData:{profession:"minecraft:toolsmith",type:"minecraft:savanna"},Offers:{Recipes:[{buy:{id:"minecraft:amethyst_shard",Count:4b}}]}} run function pk_enhanced_adventure_core:entities/zombie_villager/steam_worker/found
+execute unless score %pk_has_custom_profession pk.common.value matches 1 if data storage pk_enhanced_adventure:data Temp.Entity{VillagerData:{profession:"minecraft:toolsmith",type:"minecraft:savanna"},Offers:{Recipes:[{buy:{id:"minecraft:redstone",Count:30b}}]}} run function pk_enhanced_adventure_core:entities/zombie_villager/tinkerer/found
+execute unless score %pk_has_custom_profession pk.common.value matches 1 if data storage pk_enhanced_adventure:data Temp.Entity{VillagerData:{profession:"minecraft:toolsmith",type:"minecraft:savanna"},Offers:{Recipes:[{buy:{id:"minecraft:amethyst_shard",Count:4b}}]}} run function pk_enhanced_adventure_core:entities/zombie_villager/tinkerer/found
 
 # Mark the zombie villager as checked
 tag @s add pk_enhanced_adventure_checked

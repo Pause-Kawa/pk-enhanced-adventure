@@ -1,0 +1,6 @@
+{
+    "condition": "minecraft:location_check",
+    "predicate": {
+        "structure": "pk_enhanced_adventure_strc:swampland_mansion"
+    }
+}

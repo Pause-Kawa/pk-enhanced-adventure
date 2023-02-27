@@ -6,4 +6,4 @@ execute if entity @s[tag=!pk_adult] run function pk_enhanced_adventure_core:enti
 
 # Dispatchers
 execute if entity @s[tag=pk_alchemist] run function pk_enhanced_adventure_core:entities/villager/alchemist/tick
-execute if entity @s[tag=pk_steam_worker] run function pk_enhanced_adventure_core:entities/villager/steam_worker/tick
+execute if entity @s[tag=pk_tinkerer] run function pk_enhanced_adventure_core:entities/villager/tinkerer/tick

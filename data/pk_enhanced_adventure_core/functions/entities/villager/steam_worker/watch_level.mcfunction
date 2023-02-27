@@ -1,5 +1,0 @@
-execute store result score @s pk.enhanced_adventure.level run data get storage pk_enhanced_adventure:data Temp.Entity.VillagerData.level
-execute if entity @s[tag=!pk_reached_level_2,scores={pk.enhanced_adventure.level=2..}] run function pk_enhanced_adventure_core:entities/villager/steam_worker/reach_level/2
-execute if entity @s[tag=!pk_reached_level_3,scores={pk.enhanced_adventure.level=3..}] run function pk_enhanced_adventure_core:entities/villager/steam_worker/reach_level/3
-execute if entity @s[tag=!pk_reached_level_4,scores={pk.enhanced_adventure.level=4..}] run function pk_enhanced_adventure_core:entities/villager/steam_worker/reach_level/4
-execute if entity @s[tag=!pk_reached_level_5,scores={pk.enhanced_adventure.level=5..}] run function pk_enhanced_adventure_core:entities/villager/steam_worker/reach_level/5

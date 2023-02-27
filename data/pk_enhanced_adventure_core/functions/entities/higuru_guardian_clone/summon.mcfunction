@@ -3,5 +3,5 @@ summon wither_skeleton ~ ~ ~ {Silent:1b,Team:"PKHiddenName",Tags:["pk_enhanced_a
 
 # Define the health score
 scoreboard players set @e[type=wither_skeleton,tag=pk_higuru_guardian_clone_current,distance=..0.1] pk.enhanced_adventure.boss.health 3
-scoreboard players set @e[type=wither_skeleton,tag=pk_higuru_guardian_clone_current,distance=..0.1] pk.enhanced_adventure.boss.weapon_switch.delay 0
+scoreboard players set @e[type=wither_skeleton,tag=pk_higuru_guardian_clone_current,distance=..0.1] pk.enhanced_adventure.weapon_switch.delay 0
 tag @e[type=wither_skeleton,tag=pk_higuru_guardian_clone_current,distance=..0.1] remove pk_higuru_guardian_clone_current
