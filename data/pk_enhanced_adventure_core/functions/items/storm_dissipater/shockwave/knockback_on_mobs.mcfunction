@@ -18,7 +18,7 @@ scoreboard players operation %pk_target_z pk.common.value -= %pk_entity_z pk.com
 
 # Applying motion
 execute store result entity @s Motion[0] double 0.002 run scoreboard players get %pk_target_x pk.common.value
-#execute store result entity @s Motion[1] double 0.0002 run scoreboard players get %pk_target_y pk.common.value
+#execute store result entity @s Motion[1] double 0.002 run scoreboard players get %pk_target_y pk.common.value
 execute store result entity @s Motion[2] double 0.002 run scoreboard players get %pk_target_z pk.common.value
 
 # Remove marker

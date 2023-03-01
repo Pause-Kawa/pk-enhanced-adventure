@@ -1,2 +1,0 @@
-#data modify entity @e[type=wither,tag=pk_higuru_guardian_bossbar,distance=..50,limit=1] Health set from storage pk_enhanced_adventure:data Temp.Entity.Health
-#execute at @e[type=wither,tag=pk_higuru_guardian_bossbar,distance=..50,limit=1] run kill @e[type=wither_skull,distance=..5]

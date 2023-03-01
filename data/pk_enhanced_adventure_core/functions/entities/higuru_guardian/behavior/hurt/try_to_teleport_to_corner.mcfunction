@@ -1,2 +1,0 @@
-function pk_enhanced_adventure_core:helpers/random/uniform_0_1000
-execute if score $out pk.enhanced_adventure.random matches ..99 run function pk_enhanced_adventure_core:entities/higuru_guardian/behavior/hurt/teleport_to_corner

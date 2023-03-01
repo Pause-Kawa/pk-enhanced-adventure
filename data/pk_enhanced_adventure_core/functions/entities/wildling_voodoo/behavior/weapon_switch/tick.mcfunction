@@ -1,0 +1,3 @@
+execute if entity @s[tag=pk_use_bow,scores={pk.enhanced_adventure.weapon_switch.delay=0}] if entity @p[distance=..5] run function pk_enhanced_adventure_core:entities/wildling_voodoo/behavior/weapon_switch/axe
+execute if entity @s[tag=pk_use_axe,scores={pk.enhanced_adventure.weapon_switch.delay=0}] if entity @p[distance=5.001..] run function pk_enhanced_adventure_core:entities/wildling_voodoo/behavior/weapon_switch/bow
+scoreboard players remove @s[scores={pk.enhanced_adventure.weapon_switch.delay=1..}] pk.enhanced_adventure.weapon_switch.delay 1

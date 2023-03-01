@@ -5,14 +5,15 @@ data modify storage pk_enhanced_adventure:data Temp.Entity.HurtTime set from ent
 execute if entity @s[tag=pk_use_pickaxe,scores={pk.enhanced_adventure.weapon_switch.delay=0}] if entity @p[distance=5..15] run function pk_enhanced_adventure_core:entities/cyborg_stray/behavior/weapon_switch/crossbow
 execute if entity @s[tag=pk_use_crossbow,scores={pk.enhanced_adventure.weapon_switch.delay=0}] if entity @p[distance=..5] run function pk_enhanced_adventure_core:entities/cyborg_stray/behavior/weapon_switch/pickaxe
 execute if entity @s[tag=pk_use_crossbow,scores={pk.enhanced_adventure.weapon_switch.delay=0}] if entity @p[distance=20..] run function pk_enhanced_adventure_core:entities/cyborg_stray/behavior/weapon_switch/pickaxe
+
 # Stop the entity when close enough to shot
 execute if entity @p[distance=5..15] run attribute @s generic.movement_speed base set 0
 
 # Shot
 execute if entity @s[tag=pk_use_crossbow,scores={pk.enhanced_adventure.delay=0}] if entity @p[distance=5..15,gamemode=!creative] run function pk_enhanced_adventure_core:entities/cyborg_stray/behavior/shot/check_los
 
-# Invulnerable to arrows
-execute positioned ~ ~1 ~ as @e[type=#arrows,tag=!pk_deflected,distance=..3.5] at @s run function pk_enhanced_adventure_core:entities/cyborg_stray/behavior/remove_arrow
+# Deflect arrows
+execute positioned ~ ~1 ~ as @e[type=#arrows,tag=!pk_deflected,distance=..3.5] at @s run function pk_enhanced_adventure_core:entities/cyborg_stray/behavior/deflect_arrow
 
 # Bring back the movement speed if too close (using pickaxe) or too far to shot
 execute unless entity @p[distance=5..15] run attribute @s generic.movement_speed base set 0.25

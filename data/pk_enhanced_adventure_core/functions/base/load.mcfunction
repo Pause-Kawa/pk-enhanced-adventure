@@ -69,12 +69,12 @@ scoreboard players set %pk_const_10000 pk.common.value 10000
 # ----------------------------------------
 # Bossbars
 # ----------------------------------------
-bossbar add higuru_guardian_1 "Higuru Guardian"
-bossbar add higuru_guardian_2 "Higuru Guardian"
-bossbar add higuru_guardian_3 "Higuru Guardian"
-bossbar set higuru_guardian_1 color purple
-bossbar set higuru_guardian_2 color purple
-bossbar set higuru_guardian_3 color purple
+bossbar add wildling_voodoo_1 "Wildling Voodoo"
+bossbar add wildling_voodoo_2 "Wildling Voodoo"
+bossbar add wildling_voodoo_3 "Wildling Voodoo"
+bossbar set wildling_voodoo_1 color purple
+bossbar set wildling_voodoo_2 color purple
+bossbar set wildling_voodoo_3 color purple
 
 # ----------------------------------------
 # Helpers

@@ -2,7 +2,7 @@
 # Dev
 # ----------------------------------------
 
-execute if entity @p[tag=pk_dev] at @e[type=marker] run particle soul_fire_flame ~ ~ ~ 0 0 0 0 1 normal @a[tag=pk_dev]
+execute if entity @a[tag=pk_dev,limit=1] at @e[type=marker] run particle soul_fire_flame ~ ~ ~ 0 0 0 0 1 normal @a[tag=pk_dev]
 
 # ----------------------------------------
 # Settings
@@ -40,10 +40,10 @@ execute as @e[type=firework_rocket,tag=!pk_enhanced_adventure_checked] at @s run
 # Item
 execute as @e[type=item,tag=!pk_enhanced_adventure_checked] at @s run function pk_enhanced_adventure_core:entities/item/check
 execute as @e[type=item,tag=pk_enhanced_adventure_item_entity_to_track] at @s run function pk_enhanced_adventure_core:entities/item/tick
-# Higuru Skeleton
-execute as @e[type=skeleton,tag=pk_higuru_skeleton] at @s run function pk_enhanced_adventure_core:entities/higuru_skeleton/behavior/tick
-execute as @e[type=wither_skeleton,tag=pk_higuru_guardian] at @s run function pk_enhanced_adventure_core:entities/higuru_guardian/behavior/tick
-execute as @e[type=wither_skeleton,tag=pk_higuru_guardian_clone] at @s run function pk_enhanced_adventure_core:entities/higuru_guardian_clone/behavior/tick
+# Wildling Skeleton
+execute as @e[type=skeleton,tag=pk_wildling_skeleton] at @s run function pk_enhanced_adventure_core:entities/wildling_skeleton/behavior/tick
+execute as @e[type=wither_skeleton,tag=pk_wildling_voodoo] at @s run function pk_enhanced_adventure_core:entities/wildling_voodoo/behavior/tick
+execute as @e[type=wither_skeleton,tag=pk_wildling_fraudster] at @s run function pk_enhanced_adventure_core:entities/wildling_fraudster/behavior/tick
 # Cyborg Stray
 execute as @e[type=stray,tag=pk_cyborg_stray] at @s run function pk_enhanced_adventure_core:entities/cyborg_stray/behavior/tick
 # Marker
