@@ -1,6 +1,6 @@
 {
     "type": "minecraft:jigsaw",
-    "biomes": "minecraft:swamp",
+    "biomes": "#pk_enhanced_adventure_strc:has_structure/swamp_mansion",
     "step": "surface_structures",
     "spawn_overrides": {
         "monster": {

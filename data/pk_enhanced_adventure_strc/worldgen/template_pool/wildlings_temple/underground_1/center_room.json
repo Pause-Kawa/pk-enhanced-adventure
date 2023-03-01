@@ -1,0 +1,42 @@
+{
+    "name": "pk_enhanced_adventure_strc:wildlings_temple/underground_1/center_room",
+    "fallback": "minecraft:empty",
+    "elements": [
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "location": "pk_enhanced_adventure_strc:wildlings_temple/underground_1/center_room_1",
+                "processors": "minecraft:empty"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "location": "pk_enhanced_adventure_strc:wildlings_temple/underground_1/center_room_2",
+                "processors": "minecraft:empty"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "location": "pk_enhanced_adventure_strc:wildlings_temple/underground_1/center_room_3",
+                "processors": "minecraft:empty"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "projection": "rigid",
+                "location": "pk_enhanced_adventure_strc:wildlings_temple/underground_1/center_room_4",
+                "processors": "minecraft:empty"
+            }
+        }
+    ]
+}

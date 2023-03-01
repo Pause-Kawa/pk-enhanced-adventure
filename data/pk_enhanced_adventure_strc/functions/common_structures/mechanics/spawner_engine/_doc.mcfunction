@@ -39,4 +39,4 @@
 # - Events (array of objects): Event to run
 # -- Name : name of event
 
-summon marker ~ ~ ~20 {Tags:["pk_enhanced_adventure_strc_marker","pk_common_marker","pk_spawner_engine"],data:{TriggerValue:0,TriggerDistance:20,Waves:4,WavesDelay:200,WavesReset:0b,MaxAliveEntities:6,Entities:[{Type:"higuru_skeleton_random"},{Type:"higuru_skeleton_random"},{Type:"higuru_skeleton_random"},{Type:"higuru_skeleton_random"}],SpawnAnimations:[{Particles:"soul_fire_flame"},{Sound:"entity.evoker.cast_spell"}],OnWave:{Events:[{Name:"a"}]},OnReset:{Events:[{Name:"a"}]},Resetable:1b}}
+summon marker ~ ~ ~20 {Tags:["pk_enhanced_adventure_strc_marker","pk_common_marker","pk_spawner_engine"],data:{TriggerValue:0,TriggerDistance:20,Waves:4,WavesDelay:200,WavesReset:0b,MaxAliveEntities:6,Entities:[{Type:"wildling_skeleton_random"},{Type:"wildling_skeleton_random"},{Type:"wildling_skeleton_random"},{Type:"wildling_skeleton_random"}],SpawnAnimations:[{Particles:"soul_fire_flame"},{Sound:"entity.evoker.cast_spell"}],OnWave:{Events:[{Name:"a"}]},OnReset:{Events:[{Name:"a"}]},Resetable:1b}}

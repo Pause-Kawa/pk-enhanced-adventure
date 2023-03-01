@@ -1,2 +1,0 @@
-execute if block ~ ~ ~ tripwire[powered=true] at @e[type=marker,tag=pk_fall_trap,distance=..5] run function pk_enhanced_adventure_strc:structures/higuru_temple/mechanics/fall_trap/trigger
-execute unless block ~ ~ ~ tripwire run function pk_enhanced_adventure_strc:structures/higuru_temple/mechanics/fall_trap/disarm

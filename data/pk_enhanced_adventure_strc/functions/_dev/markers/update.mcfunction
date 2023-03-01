@@ -1,0 +1,2 @@
+execute as @e[type=marker,tag=pk_fight_engine,tag=!pk_hard_fight] run function pk_enhanced_adventure_strc:_dev/markers/fight_engine
+execute as @e[type=marker,tag=pk_fight_engine,tag=pk_hard_fight] run function pk_enhanced_adventure_strc:_dev/markers/fight_engine_hard

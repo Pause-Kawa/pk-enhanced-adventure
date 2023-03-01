@@ -1,0 +1,2 @@
+execute if entity @s[tag=pk_is_opening] run function pk_enhanced_adventure_strc:structures/wildlings_temple/mechanics/main_entrance/is_opening
+execute unless entity @s[tag=pk_is_opening] positioned ~-5 ~-3 ~-5 if entity @a[gamemode=!spectator,advancements={pk_enhanced_adventure_strc:mechanics/defeated_wither=true},dx=10,dy=4,dz=10] at @s positioned ~ ~0.5 ~ run function pk_enhanced_adventure_strc:structures/wildlings_temple/mechanics/main_entrance/start_open

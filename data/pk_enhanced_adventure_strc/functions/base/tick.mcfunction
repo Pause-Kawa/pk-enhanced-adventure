@@ -7,4 +7,4 @@ execute as @e[type=marker,tag=pk_enhanced_adventure_strc_marker] at @s run funct
 # ----------------------------------------
 # Players
 # ----------------------------------------
-execute as @a[tag=pk_get_higuru_temple_curse] at @s run function pk_enhanced_adventure_strc:structures/higuru_temple/mechanics/core/player_tick_curse
+execute as @a[tag=pk_get_wildlings_temple_curse] at @s run function pk_enhanced_adventure_strc:structures/wildlings_temple/mechanics/core/player_tick_curse
