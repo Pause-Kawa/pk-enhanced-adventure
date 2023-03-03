@@ -1,2 +1,0 @@
-execute if entity @s[scores={pk.enhanced_adventure.boss.event_time=20}] run function pk_enhanced_adventure_core:entities/wildling_voodoo/behavior/interphase/3_to_4/event_2
-scoreboard players add @s pk.enhanced_adventure.boss.event_time 1

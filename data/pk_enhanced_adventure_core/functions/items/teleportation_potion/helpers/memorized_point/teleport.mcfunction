@@ -13,3 +13,6 @@ execute if score %pk_memorized_point_dimension pk.common.value matches 1 as @p[t
 # Run teleportation events on the player
 tag @p[tag=pk_current_player] add pk_waiting_for_teleport_potion_events
 schedule function pk_enhanced_adventure_core:items/teleportation_potion/helpers/after_teleportation_schedule 1t
+
+# Remove current marker
+kill @s

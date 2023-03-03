@@ -6,4 +6,4 @@ execute if data storage pk_enhanced_adventure:data Temp.Engine.OnStop.Events[{Na
 
 execute if data storage pk_enhanced_adventure:data Temp.Engine.OnStop.Events[{Name:"wildlings_temple_room_extinguish_fire"}] run function pk_enhanced_adventure_strc:structures/wildlings_temple/events/fight_engine/on_stop/room_extinguish_fire
 
-execute if data storage pk_enhanced_adventure:data Temp.Engine.OnStop.Events[{Name:"wildling_voodoo_beaten"}] run function pk_enhanced_adventure_strc:structures/wildlings_temple/events/fight_engine/on_stop/wildling_voodoo_beaten
+execute if data storage pk_enhanced_adventure:data Temp.Engine.OnStop.Events[{Name:"wildling_guardian_beaten"}] run function pk_enhanced_adventure_strc:structures/wildlings_temple/events/fight_engine/on_stop/wildling_guardian_beaten

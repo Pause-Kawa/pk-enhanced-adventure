@@ -42,7 +42,7 @@ execute as @e[type=item,tag=!pk_enhanced_adventure_checked] at @s run function p
 execute as @e[type=item,tag=pk_enhanced_adventure_item_entity_to_track] at @s run function pk_enhanced_adventure_core:entities/item/tick
 # Wildling Skeleton
 execute as @e[type=skeleton,tag=pk_wildling_skeleton] at @s run function pk_enhanced_adventure_core:entities/wildling_skeleton/behavior/tick
-execute as @e[type=wither_skeleton,tag=pk_wildling_voodoo] at @s run function pk_enhanced_adventure_core:entities/wildling_voodoo/behavior/tick
+execute as @e[type=wither_skeleton,tag=pk_wildling_guardian] at @s run function pk_enhanced_adventure_core:entities/wildling_guardian/behavior/tick
 execute as @e[type=wither_skeleton,tag=pk_wildling_fraudster] at @s run function pk_enhanced_adventure_core:entities/wildling_fraudster/behavior/tick
 # Cyborg Stray
 execute as @e[type=stray,tag=pk_cyborg_stray] at @s run function pk_enhanced_adventure_core:entities/cyborg_stray/behavior/tick
@@ -66,6 +66,8 @@ execute as @e[type=marker,tag=pk_magnet_hook_latch_point,tag=pk_reached] at @s u
 # Phenix Pepper On A Stick
 execute as @a[tag=pk_using_ppoas] at @s run function pk_enhanced_adventure_core:items/phenix_pepper_on_a_stick/player_tick
 execute as @e[type=#pk_enhanced_adventure_core:mobs,type=!#pk_enhanced_adventure_core:exclude_inflammable,tag=pk_hurt_by_ppoas] run function pk_enhanced_adventure_core:items/phenix_pepper_on_a_stick/target_tick
+# Teleportation potion
+execute as @a[tag=pk_consumed_teleportation_potion] at @s run function pk_enhanced_adventure_core:items/teleportation_potion/player_tick
 
 # ----------------------------------------
 # Bewitchements

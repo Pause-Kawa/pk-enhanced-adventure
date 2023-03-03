@@ -76,7 +76,7 @@ execute align xyz run summon marker ~0.5 ~ ~0.5 {Tags:["pk_enhanced_adventure_st
 # Underground 3 : Center Room
 execute align xyz run summon marker ~0.5 ~ ~0.5 {Tags:["pk_enhanced_adventure_strc_marker","pk_common_marker","pk_fight_trigger"],data:{TriggerDistance:2,TriggerValue:7}}
 # - Default fight
-execute align xyz run summon marker ~0.5 ~ ~0.5 {Tags:["pk_enhanced_adventure_strc_marker","pk_common_marker","pk_fight_engine","pk_track_on_going_hook"],data:{Entities:[{Type:"wildling_voodoo"}],SpawnAnimations:[{Particles:"soul_fire_flame"},{Sound:"entity.evoker.cast_spell"}],BeforeStart:{Events:[{Name:"wildling_voodoo_before_start"}],Delay:80},OnStart:{Events:[{Name:"wildling_voodoo_start"}]},OnGoing:{Events:[{Name:"wildling_voodoo_on_going"}]},OnStop:{Events:[{Name:"wildling_voodoo_beaten"}]},BeforeStop:{Events:[{Name:"wildling_voodoo_before_stop"}],Delay:80},OnReset:{Events:[{Name:"wildling_voodoo_reset"}]},Resetable:1b,TriggerValue:7}}
+execute align xyz run summon marker ~0.5 ~ ~0.5 {Tags:["pk_enhanced_adventure_strc_marker","pk_common_marker","pk_fight_engine","pk_track_on_going_hook"],data:{Entities:[{Type:"wildling_guardian"}],SpawnAnimations:[{Particles:"soul_fire_flame"},{Sound:"entity.evoker.cast_spell"}],BeforeStart:{Events:[{Name:"wildling_guardian_before_start"}],Delay:80},OnStart:{Events:[{Name:"wildling_guardian_start"}]},OnGoing:{Events:[{Name:"wildling_guardian_on_going"}]},OnStop:{Events:[{Name:"wildling_guardian_beaten"}]},BeforeStop:{Events:[{Name:"wildling_guardian_before_stop"}],Delay:80},OnReset:{Events:[{Name:"wildling_guardian_reset"}]},Resetable:1b,TriggerValue:7}}
 # - Corner
 execute align xyz run summon marker ~0.5 ~-0.5 ~0.5 {Tags:["pk_enhanced_adventure_strc_marker","pk_boss_room_corner"]}
 # - Stairs and treasure room

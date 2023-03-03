@@ -1,1 +1,1 @@
-give @s globe_banner_pattern{pkEnhancedAdventureItemEntityToTrack:1b,pkMemorialExcerpt:1b,display:{Name:'{"text":"Memorial Excerpt","color":"yellow","italic":false}',Lore:['{"text":"Throw on the ground"}','{"text":"to memorize an aera"}']},HideFlags:33,Enchantments:[{}],CustomModelData:1611401}
+give @s globe_banner_pattern{pkEnhancedAdventureItemEntityToTrack:1b,pkMemorialExcerpt:1b,display:{Name:'{"text":"Memorial Excerpt","color":"yellow","italic":false}'},HideFlags:33,Enchantments:[{}],CustomModelData:1611401}

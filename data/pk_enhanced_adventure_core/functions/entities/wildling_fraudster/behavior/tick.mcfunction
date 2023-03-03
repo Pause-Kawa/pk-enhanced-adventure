@@ -5,7 +5,7 @@ data modify storage pk_enhanced_adventure:data Temp.Entity set from entity @s {}
 execute if entity @s[scores={pk.enhanced_adventure.boss.health=0}] run function pk_enhanced_adventure_core:entities/wildling_fraudster/behavior/disappear
 
 # Weapon switch
-function pk_enhanced_adventure_core:entities/wildling_voodoo/behavior/weapon_switch/tick
+function pk_enhanced_adventure_core:entities/wildling_guardian/behavior/weapon_switch/tick
 
 # Remove arrow fire state
 execute anchored eyes positioned ^ ^ ^ as @e[type=arrow,distance=..0.5] run data modify entity @s Fire set value -20

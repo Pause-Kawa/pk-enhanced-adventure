@@ -3,7 +3,7 @@ execute if data storage pk_enhanced_adventure:data Temp.Entity{Type:"wildling_sk
 execute if data storage pk_enhanced_adventure:data Temp.Entity{Type:"wildling_skeleton_axeman"} run function pk_enhanced_adventure_core:entities/wildling_skeleton/summon/axeman
 execute if data storage pk_enhanced_adventure:data Temp.Entity{Type:"wildling_skeleton_random"} run function pk_enhanced_adventure_core:entities/wildling_skeleton/summon/random
 execute if data storage pk_enhanced_adventure:data Temp.Entity{Type:"wildling_skeleton_cooker"} run function pk_enhanced_adventure_core:entities/wildling_skeleton/summon/cooker
-execute if data storage pk_enhanced_adventure:data Temp.Entity{Type:"wildling_voodoo"} run function pk_enhanced_adventure_core:entities/wildling_voodoo/summon
+execute if data storage pk_enhanced_adventure:data Temp.Entity{Type:"wildling_guardian"} run function pk_enhanced_adventure_core:entities/wildling_guardian/summon
 
 # Cyborg and Laborer Strays
 execute if data storage pk_enhanced_adventure:data Temp.Entity{Type:"cyborg_stray"} run function pk_enhanced_adventure_core:entities/cyborg_stray/summon

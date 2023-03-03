@@ -50,6 +50,7 @@ scoreboard objectives add pk.enhanced_adventure.magnet_hook.delay dummy
 scoreboard objectives add pk.enhanced_adventure.magnet_hook.tp_delay dummy
 scoreboard objectives add pk.enhanced_adventure.ppoas.delay dummy
 scoreboard objectives add pk.enhanced_adventure.ppoas.hurt_time dummy
+scoreboard objectives add pk.enhanced_adventure.potion.teleportation.delay dummy
 # Custom mechanics
 scoreboard objectives add pk.enhanced_adventure.ancient_altar.interaction.id dummy
 scoreboard objectives add pk.enhanced_adventure.allegiance.id dummy
@@ -69,12 +70,12 @@ scoreboard players set %pk_const_10000 pk.common.value 10000
 # ----------------------------------------
 # Bossbars
 # ----------------------------------------
-bossbar add wildling_voodoo_1 "Wildling Voodoo"
-bossbar add wildling_voodoo_2 "Wildling Voodoo"
-bossbar add wildling_voodoo_3 "Wildling Voodoo"
-bossbar set wildling_voodoo_1 color purple
-bossbar set wildling_voodoo_2 color purple
-bossbar set wildling_voodoo_3 color purple
+bossbar add wildling_guardian_1 "Wildling Guardian"
+bossbar add wildling_guardian_2 "Wildling Guardian"
+bossbar add wildling_guardian_3 "Wildling Guardian"
+bossbar set wildling_guardian_1 color purple
+bossbar set wildling_guardian_2 color purple
+bossbar set wildling_guardian_3 color purple
 
 # ----------------------------------------
 # Helpers

@@ -6,4 +6,4 @@ execute store result score @s pk.enhanced_adventure.delay run data get storage p
 scoreboard players set @s[scores={pk.enhanced_adventure.delay=..-1}] pk.enhanced_adventure.delay 0
 
 # Events dispatcher
-execute if data storage pk_enhanced_adventure:data Temp.Engine.BeforeStop.Events[{Name:"wildling_voodoo_before_stop"}] run function pk_enhanced_adventure_strc:structures/wildlings_temple/events/fight_engine/before_stop/wildling_voodoo_before_stop
+execute if data storage pk_enhanced_adventure:data Temp.Engine.BeforeStop.Events[{Name:"wildling_guardian_before_stop"}] run function pk_enhanced_adventure_strc:structures/wildlings_temple/events/fight_engine/before_stop/wildling_guardian_before_stop
