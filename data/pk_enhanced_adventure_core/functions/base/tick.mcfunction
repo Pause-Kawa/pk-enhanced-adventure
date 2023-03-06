@@ -43,7 +43,7 @@ execute as @e[type=item,tag=pk_enhanced_adventure_item_entity_to_track] at @s ru
 # Wildling Skeleton
 execute as @e[type=skeleton,tag=pk_wildling_skeleton] at @s run function pk_enhanced_adventure_core:entities/wildling_skeleton/behavior/tick
 execute as @e[type=wither_skeleton,tag=pk_wildling_guardian] at @s run function pk_enhanced_adventure_core:entities/wildling_guardian/behavior/tick
-execute as @e[type=wither_skeleton,tag=pk_wildling_fraudster] at @s run function pk_enhanced_adventure_core:entities/wildling_fraudster/behavior/tick
+execute as @e[type=wither_skeleton,tag=pk_wildling_guardian_clone] at @s run function pk_enhanced_adventure_core:entities/wildling_guardian_clone/behavior/tick
 # Cyborg Stray
 execute as @e[type=stray,tag=pk_cyborg_stray] at @s run function pk_enhanced_adventure_core:entities/cyborg_stray/behavior/tick
 # Marker

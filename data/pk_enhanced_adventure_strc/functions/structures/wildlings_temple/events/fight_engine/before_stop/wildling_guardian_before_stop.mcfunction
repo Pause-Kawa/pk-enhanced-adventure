@@ -6,7 +6,7 @@ scoreboard players remove %pk_enhanced_adventure_wildling_guardian_bossbar pk.co
 
 # Remove Wildling Guardian relative entity
 execute positioned ~-40 ~-2 -40 run tp @e[type=#skeletons,tag=pk_wildling_skeleton,dx=80,dy=50,dz=80] ~ ~-1000 ~
-execute positioned ~-40 ~-2 -40 run tp @e[type=#skeletons,tag=pk_wildling_fraudster,dx=80,dy=50,dz=80] ~ ~-1000 ~
+execute positioned ~-40 ~-2 -40 run tp @e[type=#skeletons,tag=pk_wildling_guardian_clone,dx=80,dy=50,dz=80] ~ ~-1000 ~
 
 # Animations
 playsound entity.wither.death hostile @a[distance=..50] ~ ~ ~ 0.5 0.8
